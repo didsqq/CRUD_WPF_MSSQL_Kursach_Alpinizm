@@ -1,0 +1,27 @@
+﻿<Application x:Class="Kursach_Alpinizm.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Kursach_Alpinizm"
+             StartupUri="Page_Mountains.xaml">
+    <Application.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value ="5"/>
+            <Setter Property="Width" Value ="175"/>
+            <Setter Property="Height" Value ="30"/>
+            <Setter Property="VerticalAlignment" Value ="Center"/>
+            <Setter Property="Background" Value ="#78A4BF"/>
+        </Style>
+        <Style TargetType="Grid">
+            <Setter Property="Background" Value ="#BBD3E2"/>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="VerticalAlignment" Value ="Center"></Setter>
+            <Setter Property="HorizontalAlignment" Value ="Center"></Setter>
+            <Setter Property="FontSize" Value="20"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Background" Value ="#7FA8C3"/>
+        </Style>
+
+    </Application.Resources>
+</Application>
