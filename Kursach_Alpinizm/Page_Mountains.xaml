@@ -15,7 +15,7 @@
         </Grid.RowDefinitions>
         <DataGrid x:Name="Mountains" AutoGenerateColumns="False" IsReadOnly="True" Grid.RowSpan="2">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Название" Binding="{Binding Name}" Width="*"/>
+                <DataGridTextColumn Header="Название" Binding="{Binding Title}" Width="*"/>
                 <DataGridTextColumn Header="Высота" Binding="{Binding Height}" Width="*"/>
                 <DataGridTextColumn Header="Хребет" Binding="{Binding Mountain_range}" Width="*"/>
                 <DataGridTemplateColumn Width="auto">

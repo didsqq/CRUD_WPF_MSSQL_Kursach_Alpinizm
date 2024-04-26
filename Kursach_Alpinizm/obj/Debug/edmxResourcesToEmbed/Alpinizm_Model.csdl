@@ -67,7 +67,7 @@
     <Key>
       <PropertyRef Name="ID_mountain" />
     </Key>
-    <Property Name="ID_mountain" Type="Int32" Nullable="false" />
+    <Property Name="ID_mountain" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Title" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
     <Property Name="Height" Type="Int32" Nullable="false" />
     <Property Name="Mountain_range" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
@@ -104,6 +104,16 @@
     <Property Name="ID_sport_category" Type="Int32" Nullable="false" />
     <Property Name="Title" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
     <NavigationProperty Name="alpinists" Relationship="Self.FK_alipinists_category" FromRole="sport_category" ToRole="alpinists" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
   </EntityType>
   <EntityType Name="team">
     <Key>
@@ -295,6 +305,7 @@
     <EntitySet Name="mountain_climbs" EntityType="Self.mountain_climbs" />
     <EntitySet Name="position" EntityType="Self.position" />
     <EntitySet Name="sport_category" EntityType="Self.sport_category" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
     <EntitySet Name="team" EntityType="Self.team" />
     <EntitySet Name="team_leaders" EntityType="Self.team_leaders" />
     <AssociationSet Name="FK_alipinists_category" Association="Self.FK_alipinists_category">

@@ -1,4 +1,4 @@
-﻿// Создание кода T4 для модели "C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\Alpinizm_Model.edmx" включено. 
+﻿// Создание кода T4 для модели "C:\Users\Адель\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\Alpinizm_Model.edmx" включено. 
 // Чтобы включить формирование кода прежних версий, измените значение свойства "Стратегия создания кода" конструктора
 // на "Legacy ObjectContext". Это свойство доступно в окне "Свойства", если модель
 // открыта в конструкторе.

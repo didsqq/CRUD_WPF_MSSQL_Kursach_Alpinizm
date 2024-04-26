@@ -26,9 +26,12 @@ namespace Kursach_Alpinizm
     {
         private mountain _currentMountain = new mountain();
         
-        public Add_Edit_Page()
+        public Add_Edit_Page(mountain selectedmountain)
         {
             InitializeComponent();
+
+            if (selectedmountain != null)
+                _currentMountain = selectedmountain;
             DataContext = _currentMountain;
         }
 
@@ -55,7 +58,7 @@ namespace Kursach_Alpinizm
             {
                 AlpinizmEntities.GetContext().SaveChanges();
                 MessageBox.Show("Информация сохранена");
-                Manager.MainFrame.GoBack();
+                NavigationService.Navigate(new Page_Mountains());
             }
             catch (Exception ex)
             {

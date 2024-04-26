@@ -6,11 +6,5 @@
         xmlns:local="clr-namespace:Kursach_Alpinizm"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="383*"/>
-            <RowDefinition Height="51*"/>
-        </Grid.RowDefinitions>
-        
-    </Grid>
+    <Frame Name="MainFrame" Background="white" NavigationUIVisibility="Hidden"/>
 </Window>

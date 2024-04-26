@@ -23,6 +23,7 @@ namespace Kursach_Alpinizm
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.Content = new Page_Mountains();
         }
     }
 }

@@ -23,20 +23,36 @@ namespace Kursach_Alpinizm
         public Page_Mountains()
         {
             InitializeComponent();
-            Mountains.ItemsSource = AlpinizmEntities.GetContext().mountain_climbs.ToList();
+            Mountains.ItemsSource = AlpinizmEntities.GetContext().mountain.ToList();
         }
         private void BtnEdit_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new Add_Edit_Page((sender as Button).DataContext as mountain));
         }
 
         private void BtnAdd_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Add_Edit_Page());
+            NavigationService.Navigate(new Add_Edit_Page(null));
         }
 
         private void BtnDelete_Click(object sender, RoutedEventArgs e)
         {
+            var mountainsforremoving = Mountains.SelectedItems.Cast<mountain>().ToList();
+
+            if (MessageBox.Show($"Вы точно хотите удалить следующие {mountainsforremoving.Count()} элементов?", "Внимание", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                try 
+                {
+                    AlpinizmEntities.GetContext().mountain.RemoveRange(mountainsforremoving);
+                    AlpinizmEntities.GetContext().SaveChanges();
+                    MessageBox.Show("Данные удалены");
+                    Mountains.ItemsSource = AlpinizmEntities.GetContext().mountain.ToList();
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message.ToString());
+                }
+            }
 
         }
 
@@ -45,7 +61,7 @@ namespace Kursach_Alpinizm
             if(Visibility == Visibility.Visible)
             {
                 AlpinizmEntities.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
-                Mountains.ItemsSource = AlpinizmEntities.GetContext().mountain_climbs.ToList();
+                Mountains.ItemsSource = AlpinizmEntities.GetContext().mountain.ToList();
             }
         }
     }

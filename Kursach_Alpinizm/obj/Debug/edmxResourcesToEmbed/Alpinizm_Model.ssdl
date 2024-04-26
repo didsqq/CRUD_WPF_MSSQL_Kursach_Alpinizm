@@ -55,7 +55,7 @@
     <Key>
       <PropertyRef Name="ID_mountain" />
     </Key>
-    <Property Name="ID_mountain" Type="int" Nullable="false" />
+    <Property Name="ID_mountain" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Title" Type="nvarchar" MaxLength="40" />
     <Property Name="Height" Type="int" Nullable="false" />
     <Property Name="Mountain_range" Type="nvarchar" MaxLength="60" />
@@ -86,6 +86,16 @@
     </Key>
     <Property Name="ID_sport_category" Type="int" Nullable="false" />
     <Property Name="Title" Type="nvarchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
   </EntityType>
   <EntityType Name="team">
     <Key>
@@ -273,6 +283,7 @@
     <EntitySet Name="mountain_climbs" EntityType="Self.mountain_climbs" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="position" EntityType="Self.position" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sport_category" EntityType="Self.sport_category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="team" EntityType="Self.team" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="team_leaders" EntityType="Self.team_leaders" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK_alipinists_category" Association="Self.FK_alipinists_category">
