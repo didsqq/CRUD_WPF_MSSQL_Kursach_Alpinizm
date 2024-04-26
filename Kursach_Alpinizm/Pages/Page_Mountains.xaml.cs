@@ -53,7 +53,6 @@ namespace Kursach_Alpinizm
                     MessageBox.Show(ex.Message.ToString());
                 }
             }
-
         }
 
         private void Page_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
@@ -63,6 +62,11 @@ namespace Kursach_Alpinizm
                 AlpinizmEntities.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
                 Mountains.ItemsSource = AlpinizmEntities.GetContext().mountain.ToList();
             }
+        }
+
+        private void BtnBack_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Main_Page());
         }
     }
 }

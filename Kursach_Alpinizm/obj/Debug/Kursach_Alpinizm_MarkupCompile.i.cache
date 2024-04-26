@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Адель\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\App.xaml
-31869000219
+6-831255816
 21271276807
-244160082
+27-856767551
 211893887018
-Add_Edit_Page.xaml;MainWindow.xaml;Page_Mountains.xaml;
+Pages\Add_Edit_Alpinist_Page.xaml;Pages\Add_Edit_Page.xaml;MainWindow.xaml;Main_Page.xaml;Pages\Page_Alpinists.xaml;Pages\Page_Mountains.xaml;
 
-False
+True
 

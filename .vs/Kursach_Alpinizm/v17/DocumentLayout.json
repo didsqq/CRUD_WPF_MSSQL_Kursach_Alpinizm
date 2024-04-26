@@ -3,30 +3,30 @@
   "WorkspaceRootPath": "C:\\Users\\\u0410\u0434\u0435\u043B\u044C\\Desktop\\Kursach_Alpinizm\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{88B905CE-B4B0-4880-A371-FFA07F758940}|Kursach_Alpinizm\\Kursach_Alpinizm.csproj|c:\\users\\\u0430\u0434\u0435\u043B\u044C\\desktop\\kursach_alpinizm\\kursach_alpinizm\\page_mountains.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{88B905CE-B4B0-4880-A371-FFA07F758940}|Kursach_Alpinizm\\Kursach_Alpinizm.csproj|solutionrelative:kursach_alpinizm\\page_mountains.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+      "AbsoluteMoniker": "D:0:0:{88B905CE-B4B0-4880-A371-FFA07F758940}|Kursach_Alpinizm\\Kursach_Alpinizm.csproj|c:\\users\\\u0430\u0434\u0435\u043B\u044C\\desktop\\kursach_alpinizm\\kursach_alpinizm\\pages\\add_edit_alpinist_page.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{88B905CE-B4B0-4880-A371-FFA07F758940}|Kursach_Alpinizm\\Kursach_Alpinizm.csproj|solutionrelative:kursach_alpinizm\\pages\\add_edit_alpinist_page.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88B905CE-B4B0-4880-A371-FFA07F758940}|Kursach_Alpinizm\\Kursach_Alpinizm.csproj|C:\\Users\\\u0410\u0434\u0435\u043B\u044C\\Desktop\\Kursach_Alpinizm\\kursach_alpinizm\\page_mountains.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{88B905CE-B4B0-4880-A371-FFA07F758940}|Kursach_Alpinizm\\Kursach_Alpinizm.csproj|solutionrelative:kursach_alpinizm\\page_mountains.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{88B905CE-B4B0-4880-A371-FFA07F758940}|Kursach_Alpinizm\\Kursach_Alpinizm.csproj|c:\\users\\\u0430\u0434\u0435\u043B\u044C\\desktop\\kursach_alpinizm\\kursach_alpinizm\\pages\\add_edit_alpinist_page.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{88B905CE-B4B0-4880-A371-FFA07F758940}|Kursach_Alpinizm\\Kursach_Alpinizm.csproj|solutionrelative:kursach_alpinizm\\pages\\add_edit_alpinist_page.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88B905CE-B4B0-4880-A371-FFA07F758940}|Kursach_Alpinizm\\Kursach_Alpinizm.csproj|C:\\Users\\\u0410\u0434\u0435\u043B\u044C\\Desktop\\Kursach_Alpinizm\\kursach_alpinizm\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{88B905CE-B4B0-4880-A371-FFA07F758940}|Kursach_Alpinizm\\Kursach_Alpinizm.csproj|solutionrelative:kursach_alpinizm\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+      "AbsoluteMoniker": "D:0:0:{88B905CE-B4B0-4880-A371-FFA07F758940}|Kursach_Alpinizm\\Kursach_Alpinizm.csproj|c:\\users\\\u0430\u0434\u0435\u043B\u044C\\desktop\\kursach_alpinizm\\kursach_alpinizm\\alpinists.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88B905CE-B4B0-4880-A371-FFA07F758940}|Kursach_Alpinizm\\Kursach_Alpinizm.csproj|solutionrelative:kursach_alpinizm\\alpinists.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88B905CE-B4B0-4880-A371-FFA07F758940}|Kursach_Alpinizm\\Kursach_Alpinizm.csproj|C:\\Users\\\u0410\u0434\u0435\u043B\u044C\\Desktop\\Kursach_Alpinizm\\kursach_alpinizm\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{88B905CE-B4B0-4880-A371-FFA07F758940}|Kursach_Alpinizm\\Kursach_Alpinizm.csproj|solutionrelative:kursach_alpinizm\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{88B905CE-B4B0-4880-A371-FFA07F758940}|Kursach_Alpinizm\\Kursach_Alpinizm.csproj|c:\\users\\\u0430\u0434\u0435\u043B\u044C\\desktop\\kursach_alpinizm\\kursach_alpinizm\\pages\\page_alpinists.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{88B905CE-B4B0-4880-A371-FFA07F758940}|Kursach_Alpinizm\\Kursach_Alpinizm.csproj|solutionrelative:kursach_alpinizm\\pages\\page_alpinists.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 1,
+      "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,52 +34,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Page_Mountains.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u0410\u0434\u0435\u043B\u044C\\Desktop\\Kursach_Alpinizm\\Kursach_Alpinizm\\Page_Mountains.xaml.cs",
-              "RelativeDocumentMoniker": "Kursach_Alpinizm\\Page_Mountains.xaml.cs",
-              "ToolTip": "C:\\Users\\\u0410\u0434\u0435\u043B\u044C\\Desktop\\Kursach_Alpinizm\\Kursach_Alpinizm\\Page_Mountains.xaml.cs",
-              "RelativeToolTip": "Kursach_Alpinizm\\Page_Mountains.xaml.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAYwDAAAABcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T09:31:53.706Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Page_Mountains.xaml",
-              "DocumentMoniker": "C:\\Users\\\u0410\u0434\u0435\u043B\u044C\\Desktop\\Kursach_Alpinizm\\Kursach_Alpinizm\\Page_Mountains.xaml",
-              "RelativeDocumentMoniker": "Kursach_Alpinizm\\Page_Mountains.xaml",
-              "ToolTip": "C:\\Users\\\u0410\u0434\u0435\u043B\u044C\\Desktop\\Kursach_Alpinizm\\Kursach_Alpinizm\\Page_Mountains.xaml",
-              "RelativeToolTip": "Kursach_Alpinizm\\Page_Mountains.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-25T06:49:02.109Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\\u0410\u0434\u0435\u043B\u044C\\Desktop\\Kursach_Alpinizm\\Kursach_Alpinizm\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "Kursach_Alpinizm\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\\u0410\u0434\u0435\u043B\u044C\\Desktop\\Kursach_Alpinizm\\Kursach_Alpinizm\\MainWindow.xaml",
-              "RelativeToolTip": "Kursach_Alpinizm\\MainWindow.xaml",
+              "Title": "Page_Alpinists.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0410\u0434\u0435\u043B\u044C\\Desktop\\Kursach_Alpinizm\\Kursach_Alpinizm\\Pages\\Page_Alpinists.xaml",
+              "RelativeDocumentMoniker": "Kursach_Alpinizm\\Pages\\Page_Alpinists.xaml",
+              "ToolTip": "C:\\Users\\\u0410\u0434\u0435\u043B\u044C\\Desktop\\Kursach_Alpinizm\\Kursach_Alpinizm\\Pages\\Page_Alpinists.xaml",
+              "RelativeToolTip": "Kursach_Alpinizm\\Pages\\Page_Alpinists.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-26T06:35:29.116Z",
+              "WhenOpened": "2024-04-26T20:46:42.076Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u0410\u0434\u0435\u043B\u044C\\Desktop\\Kursach_Alpinizm\\Kursach_Alpinizm\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Kursach_Alpinizm\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u0410\u0434\u0435\u043B\u044C\\Desktop\\Kursach_Alpinizm\\Kursach_Alpinizm\\MainWindow.xaml.cs",
-              "RelativeToolTip": "Kursach_Alpinizm\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAbAAAA",
+              "Title": "alpinists.cs",
+              "DocumentMoniker": "C:\\Users\\\u0410\u0434\u0435\u043B\u044C\\Desktop\\Kursach_Alpinizm\\Kursach_Alpinizm\\alpinists.cs",
+              "RelativeDocumentMoniker": "Kursach_Alpinizm\\alpinists.cs",
+              "ToolTip": "C:\\Users\\\u0410\u0434\u0435\u043B\u044C\\Desktop\\Kursach_Alpinizm\\Kursach_Alpinizm\\alpinists.cs",
+              "RelativeToolTip": "Kursach_Alpinizm\\alpinists.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAxwBkAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T06:37:45.576Z",
+              "WhenOpened": "2024-04-26T20:29:12.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Add_Edit_Alpinist_Page.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0410\u0434\u0435\u043B\u044C\\Desktop\\Kursach_Alpinizm\\Kursach_Alpinizm\\Pages\\Add_Edit_Alpinist_Page.xaml.cs",
+              "RelativeDocumentMoniker": "Kursach_Alpinizm\\Pages\\Add_Edit_Alpinist_Page.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0410\u0434\u0435\u043B\u044C\\Desktop\\Kursach_Alpinizm\\Kursach_Alpinizm\\Pages\\Add_Edit_Alpinist_Page.xaml.cs",
+              "RelativeToolTip": "Kursach_Alpinizm\\Pages\\Add_Edit_Alpinist_Page.xaml.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAswDAAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T19:57:10.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Add_Edit_Alpinist_Page.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0410\u0434\u0435\u043B\u044C\\Desktop\\Kursach_Alpinizm\\Kursach_Alpinizm\\Pages\\Add_Edit_Alpinist_Page.xaml",
+              "RelativeDocumentMoniker": "Kursach_Alpinizm\\Pages\\Add_Edit_Alpinist_Page.xaml",
+              "ToolTip": "C:\\Users\\\u0410\u0434\u0435\u043B\u044C\\Desktop\\Kursach_Alpinizm\\Kursach_Alpinizm\\Pages\\Add_Edit_Alpinist_Page.xaml",
+              "RelativeToolTip": "Kursach_Alpinizm\\Pages\\Add_Edit_Alpinist_Page.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-26T20:15:34.559Z",
               "EditorCaption": ""
             }
           ]

@@ -9,7 +9,7 @@
           <Key>
             <PropertyRef Name="ID_alpinist" />
           </Key>
-          <Property Name="ID_alpinist" Type="int" Nullable="false" />
+          <Property Name="ID_alpinist" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Surname" Type="nvarchar" MaxLength="20" Nullable="false" />
           <Property Name="Name_" Type="nvarchar" MaxLength="10" Nullable="false" />
           <Property Name="Address_" Type="nvarchar" MaxLength="150" />
@@ -21,14 +21,14 @@
           <Key>
             <PropertyRef Name="ID_category" />
           </Key>
-          <Property Name="ID_category" Type="int" Nullable="false" />
+          <Property Name="ID_category" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Title" Type="nvarchar" MaxLength="20" Nullable="false" />
         </EntityType>
         <EntityType Name="climbers_in_groups">
           <Key>
             <PropertyRef Name="ID_entry" />
           </Key>
-          <Property Name="ID_entry" Type="int" Nullable="false" />
+          <Property Name="ID_entry" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="ID_alpinist" Type="int" />
           <Property Name="ID_groups" Type="int" />
         </EntityType>
@@ -36,7 +36,7 @@
           <Key>
             <PropertyRef Name="ID_equipment" />
           </Key>
-          <Property Name="ID_equipment" Type="int" Nullable="false" />
+          <Property Name="ID_equipment" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Title" Type="nvarchar" MaxLength="20" Nullable="false" />
           <Property Name="Quantity_available" Type="int" Nullable="false" />
         </EntityType>
@@ -44,7 +44,7 @@
           <Key>
             <PropertyRef Name="ID_entry" />
           </Key>
-          <Property Name="ID_entry" Type="int" Nullable="false" />
+          <Property Name="ID_entry" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="ID_groups" Type="int" />
           <Property Name="ID_equipment" Type="int" />
           <Property Name="Quantity_taken" Type="int" />
@@ -53,7 +53,7 @@
           <Key>
             <PropertyRef Name="ID_groups" />
           </Key>
-          <Property Name="ID_groups" Type="int" Nullable="false" />
+          <Property Name="ID_groups" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Number_of_participants" Type="int" />
         </EntityType>
         <EntityType Name="mountain">
@@ -69,7 +69,7 @@
           <Key>
             <PropertyRef Name="ID_mountain_climbs" />
           </Key>
-          <Property Name="ID_mountain_climbs" Type="int" Nullable="false" />
+          <Property Name="ID_mountain_climbs" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="ID_groups" Type="int" />
           <Property Name="ID_mountain" Type="int" />
           <Property Name="ID_category" Type="int" />
@@ -81,7 +81,7 @@
           <Key>
             <PropertyRef Name="ID_position" />
           </Key>
-          <Property Name="ID_position" Type="int" Nullable="false" />
+          <Property Name="ID_position" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Title" Type="nvarchar" MaxLength="30" Nullable="false" />
           <Property Name="Description_of" Type="nvarchar" MaxLength="40" />
         </EntityType>
@@ -89,7 +89,7 @@
           <Key>
             <PropertyRef Name="ID_sport_category" />
           </Key>
-          <Property Name="ID_sport_category" Type="int" Nullable="false" />
+          <Property Name="ID_sport_category" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Title" Type="nvarchar" MaxLength="10" Nullable="false" />
         </EntityType>
         <EntityType Name="sysdiagrams">
@@ -106,7 +106,7 @@
           <Key>
             <PropertyRef Name="ID_team_member" />
           </Key>
-          <Property Name="ID_team_member" Type="int" Nullable="false" />
+          <Property Name="ID_team_member" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Surname_name" Type="nvarchar" MaxLength="100" />
           <Property Name="Date_of_birth" Type="date" />
           <Property Name="Address_" Type="nvarchar" MaxLength="150" />
@@ -119,7 +119,7 @@
           <Key>
             <PropertyRef Name="ID_entry" />
           </Key>
-          <Property Name="ID_entry" Type="int" Nullable="false" />
+          <Property Name="ID_entry" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="ID_groups" Type="int" />
           <Property Name="ID_team_member" Type="int" />
         </EntityType>
@@ -345,7 +345,7 @@
           <Key>
             <PropertyRef Name="ID_alpinist" />
           </Key>
-          <Property Name="ID_alpinist" Type="Int32" Nullable="false" />
+          <Property Name="ID_alpinist" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Surname" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Name_" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Address_" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
@@ -359,7 +359,7 @@
           <Key>
             <PropertyRef Name="ID_category" />
           </Key>
-          <Property Name="ID_category" Type="Int32" Nullable="false" />
+          <Property Name="ID_category" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Title" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="mountain_climbs" Relationship="Self.FK_climbs_category" FromRole="category_of_difficulty" ToRole="mountain_climbs" />
         </EntityType>
@@ -367,7 +367,7 @@
           <Key>
             <PropertyRef Name="ID_entry" />
           </Key>
-          <Property Name="ID_entry" Type="Int32" Nullable="false" />
+          <Property Name="ID_entry" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ID_alpinist" Type="Int32" />
           <Property Name="ID_groups" Type="Int32" />
           <NavigationProperty Name="alpinists" Relationship="Self.FK_alpinist_group" FromRole="climbers_in_groups" ToRole="alpinists" />
@@ -377,7 +377,7 @@
           <Key>
             <PropertyRef Name="ID_equipment" />
           </Key>
-          <Property Name="ID_equipment" Type="Int32" Nullable="false" />
+          <Property Name="ID_equipment" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Title" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Quantity_available" Type="Int32" Nullable="false" />
           <NavigationProperty Name="equipment_inventory" Relationship="Self.FK_equimp_invent" FromRole="equipment" ToRole="equipment_inventory" />
@@ -386,7 +386,7 @@
           <Key>
             <PropertyRef Name="ID_entry" />
           </Key>
-          <Property Name="ID_entry" Type="Int32" Nullable="false" />
+          <Property Name="ID_entry" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ID_groups" Type="Int32" />
           <Property Name="ID_equipment" Type="Int32" />
           <Property Name="Quantity_taken" Type="Int32" />
@@ -397,7 +397,7 @@
           <Key>
             <PropertyRef Name="ID_groups" />
           </Key>
-          <Property Name="ID_groups" Type="Int32" Nullable="false" />
+          <Property Name="ID_groups" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Number_of_participants" Type="Int32" />
           <NavigationProperty Name="climbers_in_groups" Relationship="Self.FK_group_alpinist" FromRole="groups" ToRole="climbers_in_groups" />
           <NavigationProperty Name="equipment_inventory" Relationship="Self.FK_equipment_group" FromRole="groups" ToRole="equipment_inventory" />
@@ -418,7 +418,7 @@
           <Key>
             <PropertyRef Name="ID_mountain_climbs" />
           </Key>
-          <Property Name="ID_mountain_climbs" Type="Int32" Nullable="false" />
+          <Property Name="ID_mountain_climbs" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ID_groups" Type="Int32" />
           <Property Name="ID_mountain" Type="Int32" />
           <Property Name="ID_category" Type="Int32" />
@@ -433,7 +433,7 @@
           <Key>
             <PropertyRef Name="ID_position" />
           </Key>
-          <Property Name="ID_position" Type="Int32" Nullable="false" />
+          <Property Name="ID_position" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Title" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Description_of" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="team" Relationship="Self.FK_position_team" FromRole="position" ToRole="team" />
@@ -442,7 +442,7 @@
           <Key>
             <PropertyRef Name="ID_sport_category" />
           </Key>
-          <Property Name="ID_sport_category" Type="Int32" Nullable="false" />
+          <Property Name="ID_sport_category" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Title" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="alpinists" Relationship="Self.FK_alipinists_category" FromRole="sport_category" ToRole="alpinists" />
         </EntityType>
@@ -460,7 +460,7 @@
           <Key>
             <PropertyRef Name="ID_team_member" />
           </Key>
-          <Property Name="ID_team_member" Type="Int32" Nullable="false" />
+          <Property Name="ID_team_member" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Surname_name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="Date_of_birth" Type="DateTime" Precision="0" />
           <Property Name="Address_" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
@@ -475,7 +475,7 @@
           <Key>
             <PropertyRef Name="ID_entry" />
           </Key>
-          <Property Name="ID_entry" Type="Int32" Nullable="false" />
+          <Property Name="ID_entry" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ID_groups" Type="Int32" />
           <Property Name="ID_team_member" Type="Int32" />
           <NavigationProperty Name="groups" Relationship="Self.FK_leaders_groups" FromRole="team_leaders" ToRole="groups" />
@@ -635,7 +635,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="AlpinizmEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="AlpinizmEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="alpinists" EntityType="Self.alpinists" />
           <EntitySet Name="category_of_difficulty" EntityType="Self.category_of_difficulty" />
           <EntitySet Name="climbers_in_groups" EntityType="Self.climbers_in_groups" />
@@ -699,7 +699,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище AlpinizmModelContainer" CdmEntityContainer="AlpinizmEntities">
+        <EntityContainerMapping StorageEntityContainer="Хранилище AlpinizmModelContainer" CdmEntityContainer="AlpinizmEntities1">
           <EntitySetMapping Name="alpinists">
             <EntityTypeMapping TypeName="AlpinizmModel.alpinists">
               <MappingFragment StoreEntitySet="alpinists">

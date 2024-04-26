@@ -4,7 +4,7 @@
     <Key>
       <PropertyRef Name="ID_alpinist" />
     </Key>
-    <Property Name="ID_alpinist" Type="int" Nullable="false" />
+    <Property Name="ID_alpinist" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Surname" Type="nvarchar" MaxLength="20" Nullable="false" />
     <Property Name="Name_" Type="nvarchar" MaxLength="10" Nullable="false" />
     <Property Name="Address_" Type="nvarchar" MaxLength="150" />
@@ -16,14 +16,14 @@
     <Key>
       <PropertyRef Name="ID_category" />
     </Key>
-    <Property Name="ID_category" Type="int" Nullable="false" />
+    <Property Name="ID_category" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Title" Type="nvarchar" MaxLength="20" Nullable="false" />
   </EntityType>
   <EntityType Name="climbers_in_groups">
     <Key>
       <PropertyRef Name="ID_entry" />
     </Key>
-    <Property Name="ID_entry" Type="int" Nullable="false" />
+    <Property Name="ID_entry" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="ID_alpinist" Type="int" />
     <Property Name="ID_groups" Type="int" />
   </EntityType>
@@ -31,7 +31,7 @@
     <Key>
       <PropertyRef Name="ID_equipment" />
     </Key>
-    <Property Name="ID_equipment" Type="int" Nullable="false" />
+    <Property Name="ID_equipment" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Title" Type="nvarchar" MaxLength="20" Nullable="false" />
     <Property Name="Quantity_available" Type="int" Nullable="false" />
   </EntityType>
@@ -39,7 +39,7 @@
     <Key>
       <PropertyRef Name="ID_entry" />
     </Key>
-    <Property Name="ID_entry" Type="int" Nullable="false" />
+    <Property Name="ID_entry" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="ID_groups" Type="int" />
     <Property Name="ID_equipment" Type="int" />
     <Property Name="Quantity_taken" Type="int" />
@@ -48,7 +48,7 @@
     <Key>
       <PropertyRef Name="ID_groups" />
     </Key>
-    <Property Name="ID_groups" Type="int" Nullable="false" />
+    <Property Name="ID_groups" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Number_of_participants" Type="int" />
   </EntityType>
   <EntityType Name="mountain">
@@ -64,7 +64,7 @@
     <Key>
       <PropertyRef Name="ID_mountain_climbs" />
     </Key>
-    <Property Name="ID_mountain_climbs" Type="int" Nullable="false" />
+    <Property Name="ID_mountain_climbs" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="ID_groups" Type="int" />
     <Property Name="ID_mountain" Type="int" />
     <Property Name="ID_category" Type="int" />
@@ -76,7 +76,7 @@
     <Key>
       <PropertyRef Name="ID_position" />
     </Key>
-    <Property Name="ID_position" Type="int" Nullable="false" />
+    <Property Name="ID_position" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Title" Type="nvarchar" MaxLength="30" Nullable="false" />
     <Property Name="Description_of" Type="nvarchar" MaxLength="40" />
   </EntityType>
@@ -84,7 +84,7 @@
     <Key>
       <PropertyRef Name="ID_sport_category" />
     </Key>
-    <Property Name="ID_sport_category" Type="int" Nullable="false" />
+    <Property Name="ID_sport_category" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Title" Type="nvarchar" MaxLength="10" Nullable="false" />
   </EntityType>
   <EntityType Name="sysdiagrams">
@@ -101,7 +101,7 @@
     <Key>
       <PropertyRef Name="ID_team_member" />
     </Key>
-    <Property Name="ID_team_member" Type="int" Nullable="false" />
+    <Property Name="ID_team_member" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Surname_name" Type="nvarchar" MaxLength="100" />
     <Property Name="Date_of_birth" Type="date" />
     <Property Name="Address_" Type="nvarchar" MaxLength="150" />
@@ -114,7 +114,7 @@
     <Key>
       <PropertyRef Name="ID_entry" />
     </Key>
-    <Property Name="ID_entry" Type="int" Nullable="false" />
+    <Property Name="ID_entry" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="ID_groups" Type="int" />
     <Property Name="ID_team_member" Type="int" />
   </EntityType>

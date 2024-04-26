@@ -16,14 +16,23 @@ using System.Windows.Shapes;
 namespace Kursach_Alpinizm
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Main_Page.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Main_Page : Page
     {
-        public MainWindow()
+        public Main_Page()
         {
             InitializeComponent();
-            MainFrame.Content = new Main_Page();
+        }
+
+        private void BtnMountain_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Page_Mountains());
+        }
+
+        private void BtnAlpinists_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Pages.Page_Alpinists());
         }
     }
 }

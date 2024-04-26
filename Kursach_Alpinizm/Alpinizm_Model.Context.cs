@@ -17,15 +17,14 @@ namespace Kursach_Alpinizm
     {
         private static AlpinizmEntities _context;
         public AlpinizmEntities()
-            : base("name=AlpinizmEntities")
+            : base("name=AlpinizmEntities1")
         {
         }
 
         public static AlpinizmEntities GetContext()
         {
-            if(_context == null)
+            if (_context == null)
                 _context = new AlpinizmEntities();
-
             return _context;
         }
     
