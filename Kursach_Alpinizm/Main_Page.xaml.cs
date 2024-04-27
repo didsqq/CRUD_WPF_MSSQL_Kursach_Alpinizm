@@ -34,5 +34,10 @@ namespace Kursach_Alpinizm
         {
             NavigationService.Navigate(new Pages.Page_Alpinists());
         }
+
+        private void BtnEquipment_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Pages.Page_Equipment());
+        }
     }
 }

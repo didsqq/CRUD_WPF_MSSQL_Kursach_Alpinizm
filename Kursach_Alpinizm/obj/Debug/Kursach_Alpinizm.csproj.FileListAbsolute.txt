@@ -58,3 +58,7 @@ C:\Users\Адель\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Pages\Pa
 C:\Users\Адель\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Pages\Page_Mountains.baml
 C:\Users\Адель\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Pages\Add_Edit_Alpinist_Page.g.cs
 C:\Users\Адель\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Pages\Add_Edit_Alpinist_Page.baml
+C:\Users\Адель\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Pages\Page_Equipment.g.cs
+C:\Users\Адель\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Pages\Add_Edit_Equipment_Page.g.cs
+C:\Users\Адель\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Pages\Page_Equipment.baml
+C:\Users\Адель\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Pages\Add_Edit_Equipment_Page.baml
