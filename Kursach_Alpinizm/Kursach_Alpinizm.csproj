@@ -100,6 +100,9 @@
     <Compile Include="groups.cs">
       <DependentUpon>AlpinizmEntities.tt</DependentUpon>
     </Compile>
+    <Compile Include="Login_Page.xaml.cs">
+      <DependentUpon>Login_Page.xaml</DependentUpon>
+    </Compile>
     <Compile Include="mountain.cs">
       <DependentUpon>AlpinizmEntities.tt</DependentUpon>
     </Compile>
@@ -169,6 +172,10 @@
     <Compile Include="team_leaders.cs">
       <DependentUpon>AlpinizmEntities.tt</DependentUpon>
     </Compile>
+    <Page Include="Login_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Add_Edit_Alpinist_Page.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
