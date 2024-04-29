@@ -48,7 +48,7 @@ namespace Kursach_Alpinizm.Pages
                 errors.AppendLine("Укажите пол");
             if (_currentAlpinist.Sex != "ж" && _currentAlpinist.Sex != "м")
                 errors.AppendLine("Пол должен быть либо 'ж' либо 'м'");
-            if(ComboRazryad == null)
+            if(ComboRazryad.SelectedItem == null)
                 errors.AppendLine("Выберите разряд");
 
             if (errors.Length > 0)

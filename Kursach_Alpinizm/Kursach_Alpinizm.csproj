@@ -67,6 +67,45 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="alpinists.cs">
+      <DependentUpon>AlpinizmEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AlpinizmEntities.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AlpinizmEntities.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AlpinizmEntities.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AlpinizmEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AlpinizmEntities.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AlpinizmEntities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="category_of_difficulty.cs">
+      <DependentUpon>AlpinizmEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="climbers_in_groups.cs">
+      <DependentUpon>AlpinizmEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="equipment.cs">
+      <DependentUpon>AlpinizmEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="equipment_inventory.cs">
+      <DependentUpon>AlpinizmEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="groups.cs">
+      <DependentUpon>AlpinizmEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mountain.cs">
+      <DependentUpon>AlpinizmEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mountain_climbs.cs">
+      <DependentUpon>AlpinizmEntities.tt</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Add_Edit_Alpinist_Page.xaml.cs">
       <DependentUpon>Add_Edit_Alpinist_Page.xaml</DependentUpon>
     </Compile>
@@ -85,47 +124,8 @@
     <Compile Include="Pages\Add_Edit_Page.xaml.cs">
       <DependentUpon>Add_Edit_Page.xaml</DependentUpon>
     </Compile>
-    <Compile Include="alpinists.cs">
-      <DependentUpon>Alpinizm_Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Alpinizm_Model.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Alpinizm_Model.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Alpinizm_Model.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Alpinizm_Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Alpinizm_Model.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Alpinizm_Model.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="category_of_difficulty.cs">
-      <DependentUpon>Alpinizm_Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="climbers_in_groups.cs">
-      <DependentUpon>Alpinizm_Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="equipment.cs">
-      <DependentUpon>Alpinizm_Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="equipment_inventory.cs">
-      <DependentUpon>Alpinizm_Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="groups.cs">
-      <DependentUpon>Alpinizm_Model.tt</DependentUpon>
-    </Compile>
     <Compile Include="Main_Page.xaml.cs">
       <DependentUpon>Main_Page.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="mountain.cs">
-      <DependentUpon>Alpinizm_Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="mountain_climbs.cs">
-      <DependentUpon>Alpinizm_Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Pages\Add_Edit_Position_Page.xaml.cs">
       <DependentUpon>Add_Edit_Position_Page.xaml</DependentUpon>
@@ -158,19 +158,16 @@
       <DependentUpon>Page_Team.xaml</DependentUpon>
     </Compile>
     <Compile Include="position.cs">
-      <DependentUpon>Alpinizm_Model.tt</DependentUpon>
+      <DependentUpon>AlpinizmEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="sport_category.cs">
-      <DependentUpon>Alpinizm_Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="sysdiagrams.cs">
-      <DependentUpon>Alpinizm_Model.tt</DependentUpon>
+      <DependentUpon>AlpinizmEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="team.cs">
-      <DependentUpon>Alpinizm_Model.tt</DependentUpon>
+      <DependentUpon>AlpinizmEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="team_leaders.cs">
-      <DependentUpon>Alpinizm_Model.tt</DependentUpon>
+      <DependentUpon>AlpinizmEntities.tt</DependentUpon>
     </Compile>
     <Page Include="Pages\Add_Edit_Alpinist_Page.xaml">
       <SubType>Designer</SubType>
@@ -271,12 +268,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="Alpinizm_Model.edmx">
+    <EntityDeploy Include="AlpinizmEntities.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Alpinizm_Model.Designer.cs</LastGenOutput>
+      <LastGenOutput>AlpinizmEntities.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Alpinizm_Model.edmx.diagram">
-      <DependentUpon>Alpinizm_Model.edmx</DependentUpon>
+    <None Include="AlpinizmEntities.edmx.diagram">
+      <DependentUpon>AlpinizmEntities.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -294,15 +291,15 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Alpinizm_Model.Context.tt">
+    <Content Include="AlpinizmEntities.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Alpinizm_Model.edmx</DependentUpon>
-      <LastGenOutput>Alpinizm_Model.Context.cs</LastGenOutput>
+      <DependentUpon>AlpinizmEntities.edmx</DependentUpon>
+      <LastGenOutput>AlpinizmEntities.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Alpinizm_Model.tt">
+    <Content Include="AlpinizmEntities.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Alpinizm_Model.edmx</DependentUpon>
-      <LastGenOutput>Alpinizm_Model.cs</LastGenOutput>
+      <DependentUpon>AlpinizmEntities.edmx</DependentUpon>
+      <LastGenOutput>AlpinizmEntities.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

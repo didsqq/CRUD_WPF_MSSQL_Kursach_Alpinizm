@@ -37,13 +37,13 @@ namespace Kursach_Alpinizm.Pages
         {
             StringBuilder errors = new StringBuilder();
 
-            if (ComboGroups == null)
+            if (ComboGroups.SelectedItem == null)
                 errors.AppendLine("Укажите Группу");
 
-            if (ComboMountain == null)
+            if (ComboMountain.SelectedItem == null)
                 errors.AppendLine("Укажите Гору");
 
-            if (ComboDificult == null)
+            if (ComboDificult.SelectedItem == null)
                 errors.AppendLine("Укажите Сложность");
 
             if (_currentClimb.Start_date_ == null)

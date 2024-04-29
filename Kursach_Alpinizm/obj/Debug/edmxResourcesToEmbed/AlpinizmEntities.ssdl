@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище alpinizmModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="alpinists">
+    <Key>
+      <PropertyRef Name="ID_alpinist" />
+    </Key>
+    <Property Name="ID_alpinist" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Surname" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Name_" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Address_" Type="nvarchar" MaxLength="150" />
+    <Property Name="Phone" Type="varchar" MaxLength="15" />
+    <Property Name="Sex" Type="nvarchar" MaxLength="1" Nullable="false" />
+    <Property Name="ID_sport_category" Type="int" />
+  </EntityType>
+  <EntityType Name="category_of_difficulty">
+    <Key>
+      <PropertyRef Name="ID_category" />
+    </Key>
+    <Property Name="ID_category" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="climbers_in_groups">
+    <Key>
+      <PropertyRef Name="ID_entry" />
+    </Key>
+    <Property Name="ID_entry" Type="int" Nullable="false" />
+    <Property Name="ID_alpinist" Type="int" />
+    <Property Name="ID_groups" Type="int" />
+  </EntityType>
+  <EntityType Name="equipment">
+    <Key>
+      <PropertyRef Name="ID_equipment" />
+    </Key>
+    <Property Name="ID_equipment" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Quantity_available" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="equipment_inventory">
+    <Key>
+      <PropertyRef Name="ID_entry" />
+    </Key>
+    <Property Name="ID_entry" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_groups" Type="int" />
+    <Property Name="ID_equipment" Type="int" />
+    <Property Name="Quantity_taken" Type="int" />
+  </EntityType>
+  <EntityType Name="groups">
+    <Key>
+      <PropertyRef Name="ID_groups" />
+    </Key>
+    <Property Name="ID_groups" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Number_of_participants" Type="int" />
+  </EntityType>
+  <EntityType Name="mountain">
+    <Key>
+      <PropertyRef Name="ID_mountain" />
+    </Key>
+    <Property Name="ID_mountain" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="40" />
+    <Property Name="Height" Type="int" Nullable="false" />
+    <Property Name="Mountain_range" Type="nvarchar" MaxLength="60" />
+  </EntityType>
+  <EntityType Name="mountain_climbs">
+    <Key>
+      <PropertyRef Name="ID_mountain_climbs" />
+    </Key>
+    <Property Name="ID_mountain_climbs" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_groups" Type="int" />
+    <Property Name="ID_mountain" Type="int" />
+    <Property Name="ID_category" Type="int" />
+    <Property Name="Start_date_" Type="date" />
+    <Property Name="End_date_" Type="date" />
+    <Property Name="Total" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="position">
+    <Key>
+      <PropertyRef Name="ID_position" />
+    </Key>
+    <Property Name="ID_position" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="Description_of" Type="nvarchar" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="sport_category">
+    <Key>
+      <PropertyRef Name="ID_sport_category" />
+    </Key>
+    <Property Name="ID_sport_category" Type="int" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="team">
+    <Key>
+      <PropertyRef Name="ID_team_member" />
+    </Key>
+    <Property Name="ID_team_member" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Surname_name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Date_of_birth" Type="date" />
+    <Property Name="Address_" Type="nvarchar" MaxLength="150" />
+    <Property Name="ID_position" Type="int" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="15" />
+    <Property Name="Password_" Type="varchar" MaxLength="255" />
+    <Property Name="Login_" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="team_leaders">
+    <Key>
+      <PropertyRef Name="ID_entry" />
+    </Key>
+    <Property Name="ID_entry" Type="int" Nullable="false" />
+    <Property Name="ID_groups" Type="int" />
+    <Property Name="ID_team_member" Type="int" />
+  </EntityType>
+  <Association Name="FK_alipinists_category">
+    <End Role="sport_category" Type="Self.sport_category" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="alpinists" Type="Self.alpinists" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sport_category">
+        <PropertyRef Name="ID_sport_category" />
+      </Principal>
+      <Dependent Role="alpinists">
+        <PropertyRef Name="ID_sport_category" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_alpinist_group">
+    <End Role="alpinists" Type="Self.alpinists" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="climbers_in_groups" Type="Self.climbers_in_groups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="alpinists">
+        <PropertyRef Name="ID_alpinist" />
+      </Principal>
+      <Dependent Role="climbers_in_groups">
+        <PropertyRef Name="ID_alpinist" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_climbs_category">
+    <End Role="category_of_difficulty" Type="Self.category_of_difficulty" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="mountain_climbs" Type="Self.mountain_climbs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="category_of_difficulty">
+        <PropertyRef Name="ID_category" />
+      </Principal>
+      <Dependent Role="mountain_climbs">
+        <PropertyRef Name="ID_category" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_climbs_groups">
+    <End Role="groups" Type="Self.groups" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="mountain_climbs" Type="Self.mountain_climbs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="groups">
+        <PropertyRef Name="ID_groups" />
+      </Principal>
+      <Dependent Role="mountain_climbs">
+        <PropertyRef Name="ID_groups" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_climbs_mountain">
+    <End Role="mountain" Type="Self.mountain" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="mountain_climbs" Type="Self.mountain_climbs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mountain">
+        <PropertyRef Name="ID_mountain" />
+      </Principal>
+      <Dependent Role="mountain_climbs">
+        <PropertyRef Name="ID_mountain" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_equimp_invent">
+    <End Role="equipment" Type="Self.equipment" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="equipment_inventory" Type="Self.equipment_inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="equipment">
+        <PropertyRef Name="ID_equipment" />
+      </Principal>
+      <Dependent Role="equipment_inventory">
+        <PropertyRef Name="ID_equipment" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_equipment_group">
+    <End Role="groups" Type="Self.groups" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="equipment_inventory" Type="Self.equipment_inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="groups">
+        <PropertyRef Name="ID_groups" />
+      </Principal>
+      <Dependent Role="equipment_inventory">
+        <PropertyRef Name="ID_groups" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_group_alpinist">
+    <End Role="groups" Type="Self.groups" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="climbers_in_groups" Type="Self.climbers_in_groups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="groups">
+        <PropertyRef Name="ID_groups" />
+      </Principal>
+      <Dependent Role="climbers_in_groups">
+        <PropertyRef Name="ID_groups" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_leaders_groups">
+    <End Role="groups" Type="Self.groups" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="team_leaders" Type="Self.team_leaders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="groups">
+        <PropertyRef Name="ID_groups" />
+      </Principal>
+      <Dependent Role="team_leaders">
+        <PropertyRef Name="ID_groups" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_leaders_member_group">
+    <End Role="team" Type="Self.team" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="team_leaders" Type="Self.team_leaders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="team">
+        <PropertyRef Name="ID_team_member" />
+      </Principal>
+      <Dependent Role="team_leaders">
+        <PropertyRef Name="ID_team_member" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_position_team">
+    <End Role="position" Type="Self.position" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="team" Type="Self.team" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="position">
+        <PropertyRef Name="ID_position" />
+      </Principal>
+      <Dependent Role="team">
+        <PropertyRef Name="ID_position" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище alpinizmModelContainer">
+    <EntitySet Name="alpinists" EntityType="Self.alpinists" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="category_of_difficulty" EntityType="Self.category_of_difficulty" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="climbers_in_groups" EntityType="Self.climbers_in_groups" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="equipment" EntityType="Self.equipment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="equipment_inventory" EntityType="Self.equipment_inventory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="groups" EntityType="Self.groups" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mountain" EntityType="Self.mountain" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mountain_climbs" EntityType="Self.mountain_climbs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="position" EntityType="Self.position" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sport_category" EntityType="Self.sport_category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="team" EntityType="Self.team" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="team_leaders" EntityType="Self.team_leaders" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_alipinists_category" Association="Self.FK_alipinists_category">
+      <End Role="sport_category" EntitySet="sport_category" />
+      <End Role="alpinists" EntitySet="alpinists" />
+    </AssociationSet>
+    <AssociationSet Name="FK_alpinist_group" Association="Self.FK_alpinist_group">
+      <End Role="alpinists" EntitySet="alpinists" />
+      <End Role="climbers_in_groups" EntitySet="climbers_in_groups" />
+    </AssociationSet>
+    <AssociationSet Name="FK_climbs_category" Association="Self.FK_climbs_category">
+      <End Role="category_of_difficulty" EntitySet="category_of_difficulty" />
+      <End Role="mountain_climbs" EntitySet="mountain_climbs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_climbs_groups" Association="Self.FK_climbs_groups">
+      <End Role="groups" EntitySet="groups" />
+      <End Role="mountain_climbs" EntitySet="mountain_climbs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_climbs_mountain" Association="Self.FK_climbs_mountain">
+      <End Role="mountain" EntitySet="mountain" />
+      <End Role="mountain_climbs" EntitySet="mountain_climbs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_equimp_invent" Association="Self.FK_equimp_invent">
+      <End Role="equipment" EntitySet="equipment" />
+      <End Role="equipment_inventory" EntitySet="equipment_inventory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_equipment_group" Association="Self.FK_equipment_group">
+      <End Role="groups" EntitySet="groups" />
+      <End Role="equipment_inventory" EntitySet="equipment_inventory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_group_alpinist" Association="Self.FK_group_alpinist">
+      <End Role="groups" EntitySet="groups" />
+      <End Role="climbers_in_groups" EntitySet="climbers_in_groups" />
+    </AssociationSet>
+    <AssociationSet Name="FK_leaders_groups" Association="Self.FK_leaders_groups">
+      <End Role="groups" EntitySet="groups" />
+      <End Role="team_leaders" EntitySet="team_leaders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_leaders_member_group" Association="Self.FK_leaders_member_group">
+      <End Role="team" EntitySet="team" />
+      <End Role="team_leaders" EntitySet="team_leaders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_position_team" Association="Self.FK_position_team">
+      <End Role="position" EntitySet="position" />
+      <End Role="team" EntitySet="team" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

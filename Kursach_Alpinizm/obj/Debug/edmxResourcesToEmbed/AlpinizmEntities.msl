@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище alpinizmModelContainer" CdmEntityContainer="alpinizmEntities">
+    <EntitySetMapping Name="alpinists">
+      <EntityTypeMapping TypeName="alpinizmModel.alpinists">
+        <MappingFragment StoreEntitySet="alpinists">
+          <ScalarProperty Name="ID_alpinist" ColumnName="ID_alpinist" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Name_" ColumnName="Name_" />
+          <ScalarProperty Name="Address_" ColumnName="Address_" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="ID_sport_category" ColumnName="ID_sport_category" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="category_of_difficulty">
+      <EntityTypeMapping TypeName="alpinizmModel.category_of_difficulty">
+        <MappingFragment StoreEntitySet="category_of_difficulty">
+          <ScalarProperty Name="ID_category" ColumnName="ID_category" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="climbers_in_groups">
+      <EntityTypeMapping TypeName="alpinizmModel.climbers_in_groups">
+        <MappingFragment StoreEntitySet="climbers_in_groups">
+          <ScalarProperty Name="ID_entry" ColumnName="ID_entry" />
+          <ScalarProperty Name="ID_alpinist" ColumnName="ID_alpinist" />
+          <ScalarProperty Name="ID_groups" ColumnName="ID_groups" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="equipment">
+      <EntityTypeMapping TypeName="alpinizmModel.equipment">
+        <MappingFragment StoreEntitySet="equipment">
+          <ScalarProperty Name="ID_equipment" ColumnName="ID_equipment" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Quantity_available" ColumnName="Quantity_available" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="equipment_inventory">
+      <EntityTypeMapping TypeName="alpinizmModel.equipment_inventory">
+        <MappingFragment StoreEntitySet="equipment_inventory">
+          <ScalarProperty Name="ID_entry" ColumnName="ID_entry" />
+          <ScalarProperty Name="ID_groups" ColumnName="ID_groups" />
+          <ScalarProperty Name="ID_equipment" ColumnName="ID_equipment" />
+          <ScalarProperty Name="Quantity_taken" ColumnName="Quantity_taken" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="groups">
+      <EntityTypeMapping TypeName="alpinizmModel.groups">
+        <MappingFragment StoreEntitySet="groups">
+          <ScalarProperty Name="ID_groups" ColumnName="ID_groups" />
+          <ScalarProperty Name="Number_of_participants" ColumnName="Number_of_participants" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mountain">
+      <EntityTypeMapping TypeName="alpinizmModel.mountain">
+        <MappingFragment StoreEntitySet="mountain">
+          <ScalarProperty Name="ID_mountain" ColumnName="ID_mountain" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Mountain_range" ColumnName="Mountain_range" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mountain_climbs">
+      <EntityTypeMapping TypeName="alpinizmModel.mountain_climbs">
+        <MappingFragment StoreEntitySet="mountain_climbs">
+          <ScalarProperty Name="ID_mountain_climbs" ColumnName="ID_mountain_climbs" />
+          <ScalarProperty Name="ID_groups" ColumnName="ID_groups" />
+          <ScalarProperty Name="ID_mountain" ColumnName="ID_mountain" />
+          <ScalarProperty Name="ID_category" ColumnName="ID_category" />
+          <ScalarProperty Name="Start_date_" ColumnName="Start_date_" />
+          <ScalarProperty Name="End_date_" ColumnName="End_date_" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="position">
+      <EntityTypeMapping TypeName="alpinizmModel.position">
+        <MappingFragment StoreEntitySet="position">
+          <ScalarProperty Name="ID_position" ColumnName="ID_position" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description_of" ColumnName="Description_of" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sport_category">
+      <EntityTypeMapping TypeName="alpinizmModel.sport_category">
+        <MappingFragment StoreEntitySet="sport_category">
+          <ScalarProperty Name="ID_sport_category" ColumnName="ID_sport_category" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="team">
+      <EntityTypeMapping TypeName="alpinizmModel.team">
+        <MappingFragment StoreEntitySet="team">
+          <ScalarProperty Name="ID_team_member" ColumnName="ID_team_member" />
+          <ScalarProperty Name="Surname_name" ColumnName="Surname_name" />
+          <ScalarProperty Name="Date_of_birth" ColumnName="Date_of_birth" />
+          <ScalarProperty Name="Address_" ColumnName="Address_" />
+          <ScalarProperty Name="ID_position" ColumnName="ID_position" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Password_" ColumnName="Password_" />
+          <ScalarProperty Name="Login_" ColumnName="Login_" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="team_leaders">
+      <EntityTypeMapping TypeName="alpinizmModel.team_leaders">
+        <MappingFragment StoreEntitySet="team_leaders">
+          <ScalarProperty Name="ID_entry" ColumnName="ID_entry" />
+          <ScalarProperty Name="ID_groups" ColumnName="ID_groups" />
+          <ScalarProperty Name="ID_team_member" ColumnName="ID_team_member" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

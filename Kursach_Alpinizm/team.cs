@@ -25,7 +25,7 @@ namespace Kursach_Alpinizm
         public Nullable<System.DateTime> Date_of_birth { get; set; }
         public string Address_ { get; set; }
         public Nullable<int> ID_position { get; set; }
-        public Nullable<int> Phone { get; set; }
+        public string Phone { get; set; }
         public string Password_ { get; set; }
         public string Login_ { get; set; }
     

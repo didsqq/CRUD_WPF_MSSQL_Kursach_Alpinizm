@@ -34,7 +34,7 @@ namespace Kursach_Alpinizm.Pages
         private void BtnSave_Click(object sender, RoutedEventArgs e)
         {
             StringBuilder errors = new StringBuilder();
-
+            
             if (string.IsNullOrWhiteSpace(_currentteam.Surname_name))
                 errors.AppendLine("Укажите Фамилию имя");
             if (_currentteam.Date_of_birth == null)
@@ -49,7 +49,7 @@ namespace Kursach_Alpinizm.Pages
             if (string.IsNullOrWhiteSpace(_currentteam.Password_))
                 errors.AppendLine("Укажите Пароль");
 
-            if (ComboPosition == null)
+            if (ComboPosition.SelectedItem == null)
                 errors.AppendLine("Выберите должность");
 
             if (errors.Length > 0)

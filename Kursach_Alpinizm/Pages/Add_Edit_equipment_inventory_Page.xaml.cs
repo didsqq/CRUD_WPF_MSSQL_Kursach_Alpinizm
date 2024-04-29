@@ -39,10 +39,10 @@ namespace Kursach_Alpinizm.Pages
             //if (string.IsNullOrWhiteSpace(Convert.ToString(_currentequipment_inventory.Quantity_taken)))
               //  errors.AppendLine("Укажите количество");
 
-            if (ComboGroup == null)
+            if (ComboGroup.SelectedItem == null)
                 errors.AppendLine("Выберите группу");
 
-            if (ComboEquipment == null)
+            if (ComboEquipment.SelectedItem == null)
                 errors.AppendLine("Выберите снаряжение");
 
             if (errors.Length > 0)

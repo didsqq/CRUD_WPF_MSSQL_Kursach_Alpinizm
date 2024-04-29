@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("alpinizm_model.context.tt")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("alpinizm_model.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("alpinizmentities.context.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("alpinizmentities.tt")]
 
 

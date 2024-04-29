@@ -17,17 +17,17 @@ namespace Kursach_Alpinizm
     {
         private static AlpinizmEntities _context;
         public AlpinizmEntities()
-            : base("name=AlpinizmEntities1")
+            : base("name=alpinizmEntities")
         {
         }
-
         public static AlpinizmEntities GetContext()
         {
             if (_context == null)
                 _context = new AlpinizmEntities();
             return _context;
         }
-    
+
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
@@ -43,7 +43,6 @@ namespace Kursach_Alpinizm
         public virtual DbSet<mountain_climbs> mountain_climbs { get; set; }
         public virtual DbSet<position> position { get; set; }
         public virtual DbSet<sport_category> sport_category { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<team> team { get; set; }
         public virtual DbSet<team_leaders> team_leaders { get; set; }
     }

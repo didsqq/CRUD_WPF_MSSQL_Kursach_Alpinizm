@@ -40,7 +40,7 @@ namespace Kursach_Alpinizm
             StringBuilder errors = new StringBuilder();
 
             if (string.IsNullOrWhiteSpace(_currentMountain.Title))
-                errors.AppendLine("Укажите название отеля");
+                errors.AppendLine("Укажите название горы");
             if (string.IsNullOrWhiteSpace(_currentMountain.Mountain_range))
                 errors.AppendLine("Укажите название хребта");
             if (_currentMountain.Height < 372 || _currentMountain.Height > 8848)
