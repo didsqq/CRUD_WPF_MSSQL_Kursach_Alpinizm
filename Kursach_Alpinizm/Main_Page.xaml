@@ -22,7 +22,7 @@
         <Button Content="Горы" Grid.Row="0" Grid.Column="0"  Name="BtnMountain" Click="BtnMountain_Click"/>
         <Button Content="Альпинисты" Grid.Row="1" Grid.Column="0" Name="BtnAlpinists" Click="BtnAlpinists_Click"/>
         <Button Content="Снаряжение" Grid.Row="2" Grid.Column="0" Name="BtnEquipment" Click="BtnEquipment_Click"/>
-        <Button Content="Горы" Grid.Row="3" Grid.Column="0"/>
+        <Button Content="Восхождения" Grid.Row="3" Grid.Column="0" Name="BtnClimbs" Click="BtnClimbs_Click"/>
         <Button Content="Горы" Grid.Row="0" Grid.Column="1"/>
         <Button Content="Горы" Grid.Row="1" Grid.Column="1"/>
         <Button Content="Горы" Grid.Row="2" Grid.Column="1"/>

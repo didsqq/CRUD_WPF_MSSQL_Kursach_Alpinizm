@@ -1,6 +1,5 @@
 C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Kursach_Alpinizm.csproj.AssemblyReference.cache
 C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\MainWindow.g.cs
-C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Page_Mountains.g.cs
 C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\App.g.cs
 C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Kursach_Alpinizm_Content.g.cs
 C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Kursach_Alpinizm_MarkupCompile.cache
@@ -14,7 +13,6 @@ C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\bin\Debug\En
 C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\bin\Debug\ru\EntityFramework.resources.dll
 C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\MainWindow.baml
-C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Page_Mountains.baml
 C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Kursach_Alpinizm.g.resources
 C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Kursach_Alpinizm.Properties.Resources.resources
 C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Kursach_Alpinizm.csproj.GenerateResource.cache
@@ -22,9 +20,7 @@ C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Ku
 C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Kursach_Alpinizm.csproj.CopyComplete
 C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Kursach_Alpinizm.exe
 C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Kursach_Alpinizm.pdb
-C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Add_Edit_Page.g.cs
 C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\App.baml
-C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Add_Edit_Page.baml
 C:\Users\Адель\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Kursach_Alpinizm.csproj.AssemblyReference.cache
 C:\Users\Адель\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\MainWindow.g.cs
 C:\Users\Адель\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\App.g.cs
@@ -62,3 +58,21 @@ C:\Users\Адель\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Pages\Pa
 C:\Users\Адель\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Pages\Add_Edit_Equipment_Page.g.cs
 C:\Users\Адель\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Pages\Page_Equipment.baml
 C:\Users\Адель\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Pages\Add_Edit_Equipment_Page.baml
+C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Pages\Add_Edit_Alpinist_Page.g.cs
+C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Pages\Add_Edit_Equipment_Page.g.cs
+C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Pages\Add_Edit_Page.g.cs
+C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Main_Page.g.cs
+C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Pages\Page_Alpinists.g.cs
+C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Pages\Page_Equipment.g.cs
+C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Pages\Page_Mountains.g.cs
+C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Pages\Add_Edit_Alpinist_Page.baml
+C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Pages\Add_Edit_Equipment_Page.baml
+C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Pages\Add_Edit_Page.baml
+C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Main_Page.baml
+C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Pages\Page_Alpinists.baml
+C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Pages\Page_Equipment.baml
+C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Pages\Page_Mountains.baml
+C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Pages\Add_Edit_Climb_Page.g.cs
+C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Pages\Page_Climbs.g.cs
+C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Pages\Add_Edit_Climb_Page.baml
+C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Pages\Page_Climbs.baml
