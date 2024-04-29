@@ -28,9 +28,9 @@
         <TextBlock Text="Дата начала" Grid.Row="3"></TextBlock>
         <TextBlock Text="Дата конца" Grid.Row="4"></TextBlock>
         <TextBlock Text="Итог" Grid.Row="5"></TextBlock>
-        <ComboBox SelectedItem="{Binding groups.ID_groups}" x:Name="ComboGroups" Grid.Column="1" Height="30" DisplayMemberPath="Title"/>
-        <ComboBox SelectedItem="{Binding mountain.Title}" x:Name="ComboMountain" Grid.Row="1" Grid.Column="1" Height="30" DisplayMemberPath="Title"/>
-        <ComboBox SelectedItem="{Binding category_of_difficulty.Title}" x:Name="ComboDificult" Grid.Row="2" Grid.Column="1" Height="30" DisplayMemberPath="Title"/>
+        <ComboBox SelectedItem="{Binding groups}" x:Name="ComboGroups" Grid.Column="1" Height="30" DisplayMemberPath="ID_groups"/>
+        <ComboBox SelectedItem="{Binding mountain}" x:Name="ComboMountain" Grid.Row="1" Grid.Column="1" Height="30" DisplayMemberPath="Title"/>
+        <ComboBox SelectedItem="{Binding category_of_difficulty}" x:Name="ComboDificult" Grid.Row="2" Grid.Column="1" Height="30" DisplayMemberPath="Title"/>
         <TextBox Text="{Binding Start_date_}" Grid.Column="1" Grid.Row="3" Height="30"></TextBox>
         <TextBox Text="{Binding End_date_}" Grid.Column="1" Grid.Row="4" Height="30"></TextBox>
         <TextBox Text="{Binding Total}" Grid.Column="1" Grid.Row="5" Height="30"></TextBox>

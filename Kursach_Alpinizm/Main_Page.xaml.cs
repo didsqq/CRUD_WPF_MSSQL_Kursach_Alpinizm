@@ -44,5 +44,25 @@ namespace Kursach_Alpinizm
         {
             NavigationService.Navigate(new Pages.Page_Climbs());
         }
+
+        private void BtnPosition_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Pages.Page_Position());
+        }
+
+        private void BtnTeam_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Pages.Page_Team());
+        }
+
+        private void BtnEquipment_inventory_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Pages.Page_Equipment_inventory());
+        }
+
+        private void BtnGroup_inventory_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Pages.Page_Group());
+        }
     }
 }

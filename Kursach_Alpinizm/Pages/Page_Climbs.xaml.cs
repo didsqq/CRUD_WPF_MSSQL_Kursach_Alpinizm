@@ -23,7 +23,7 @@ namespace Kursach_Alpinizm.Pages
         public Page_Climbs()
         {
             InitializeComponent();
-            Alpinists.ItemsSource = AlpinizmEntities.GetContext().mountain_climbs.ToList();
+            Climbs.ItemsSource = AlpinizmEntities.GetContext().mountain_climbs.ToList();
         }
 
         private void Page_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
@@ -31,7 +31,7 @@ namespace Kursach_Alpinizm.Pages
             if (Visibility == Visibility.Visible)
             {
                 AlpinizmEntities.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
-                Alpinists.ItemsSource = AlpinizmEntities.GetContext().mountain_climbs.ToList();
+                Climbs.ItemsSource = AlpinizmEntities.GetContext().mountain_climbs.ToList();
             }
         }
 
@@ -47,7 +47,7 @@ namespace Kursach_Alpinizm.Pages
 
         private void BtnDelete_Click(object sender, RoutedEventArgs e)
         {
-            var climbforremoving = Alpinists.SelectedItems.Cast<mountain_climbs>().ToList();
+            var climbforremoving = Climbs.SelectedItems.Cast<mountain_climbs>().ToList();
 
             if (MessageBox.Show($"Вы точно хотите удалить следующие {climbforremoving.Count()} элементов?", "Внимание", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
             {
@@ -56,7 +56,7 @@ namespace Kursach_Alpinizm.Pages
                     AlpinizmEntities.GetContext().mountain_climbs.RemoveRange(climbforremoving);
                     AlpinizmEntities.GetContext().SaveChanges();
                     MessageBox.Show("Данные удалены");
-                    Alpinists.ItemsSource = AlpinizmEntities.GetContext().mountain_climbs.ToList();
+                    Climbs.ItemsSource = AlpinizmEntities.GetContext().mountain_climbs.ToList();
                 }
                 catch (Exception ex)
                 {

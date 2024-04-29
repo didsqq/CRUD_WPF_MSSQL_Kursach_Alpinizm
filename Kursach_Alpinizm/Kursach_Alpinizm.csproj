@@ -73,8 +73,14 @@
     <Compile Include="Pages\Add_Edit_Climb_Page.xaml.cs">
       <DependentUpon>Add_Edit_Climb_Page.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Add_Edit_equipment_inventory_Page.xaml.cs">
+      <DependentUpon>Add_Edit_equipment_inventory_Page.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Add_Edit_Equipment_Page.xaml.cs">
       <DependentUpon>Add_Edit_Equipment_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Add_Edit_Groups_Page.xaml.cs">
+      <DependentUpon>Add_Edit_Groups_Page.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Add_Edit_Page.xaml.cs">
       <DependentUpon>Add_Edit_Page.xaml</DependentUpon>
@@ -121,6 +127,12 @@
     <Compile Include="mountain_climbs.cs">
       <DependentUpon>Alpinizm_Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Add_Edit_Position_Page.xaml.cs">
+      <DependentUpon>Add_Edit_Position_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Add_Edit_Team_Page.xaml.cs">
+      <DependentUpon>Add_Edit_Team_Page.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Page_Alpinists.xaml.cs">
       <DependentUpon>Page_Alpinists.xaml</DependentUpon>
     </Compile>
@@ -130,8 +142,20 @@
     <Compile Include="Pages\Page_Equipment.xaml.cs">
       <DependentUpon>Page_Equipment.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Page_Equipment_inventory.xaml.cs">
+      <DependentUpon>Page_Equipment_inventory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page_Group.xaml.cs">
+      <DependentUpon>Page_Group.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Page_Mountains.xaml.cs">
       <DependentUpon>Page_Mountains.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page_Position.xaml.cs">
+      <DependentUpon>Page_Position.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page_Team.xaml.cs">
+      <DependentUpon>Page_Team.xaml</DependentUpon>
     </Compile>
     <Compile Include="position.cs">
       <DependentUpon>Alpinizm_Model.tt</DependentUpon>
@@ -156,7 +180,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\Add_Edit_equipment_inventory_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Add_Edit_Equipment_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Add_Edit_Groups_Page.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -180,6 +212,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\Add_Edit_Position_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Add_Edit_Team_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Page_Alpinists.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -192,7 +232,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\Page_Equipment_inventory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Page_Group.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Page_Mountains.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Page_Position.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Page_Team.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
