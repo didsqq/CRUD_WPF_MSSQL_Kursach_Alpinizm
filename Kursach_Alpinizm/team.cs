@@ -28,6 +28,7 @@ namespace Kursach_Alpinizm
         public string Phone { get; set; }
         public string Password_ { get; set; }
         public string Login_ { get; set; }
+
     
         public virtual position position { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

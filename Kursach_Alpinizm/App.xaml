@@ -11,9 +11,6 @@
             <Setter Property="VerticalAlignment" Value ="Center"/>
             <Setter Property="Background" Value ="#78A4BF"/>
         </Style>
-        <Style TargetType="Grid">
-            <Setter Property="Background" Value ="#BBD3E2"/>
-        </Style>
         <Style TargetType="TextBlock">
             <Setter Property="VerticalAlignment" Value ="Center"></Setter>
             <Setter Property="HorizontalAlignment" Value ="Center"></Setter>
@@ -21,6 +18,9 @@
         </Style>
         <Style TargetType="TextBox">
             <Setter Property="Background" Value ="#7FA8C3"/>
+        </Style>
+        <Style TargetType="DataGrid">
+            <Setter Property="Background" Value ="Transparent"/>
         </Style>
 
     </Application.Resources>

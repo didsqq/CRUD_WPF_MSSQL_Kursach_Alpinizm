@@ -7,7 +7,9 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Add_Edit_equipment_inventory_Page">
-
+    <Page.Background>
+        <ImageBrush ImageSource="../image/photo_2024-04-30_22-12-55.jpg"/>
+    </Page.Background>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200*"/>

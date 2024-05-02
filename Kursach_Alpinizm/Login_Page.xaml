@@ -7,6 +7,9 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="500"
       Title="Login_Page">
+    <Page.Background>
+        <ImageBrush ImageSource="image/photo_2024-04-30_22-12-55.jpg"/>
+    </Page.Background>
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -18,14 +21,13 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <TextBlock Text="Логин" Grid.Row="1"></TextBlock>
         <TextBlock Text="Пароль" Grid.Row="2"></TextBlock>
-        <TextBox x:Name="Login" Grid.Column="1" Grid.Row="1" Height="30"></TextBox>
-        <TextBox x:Name="Password" Grid.Column="1" Grid.Row="2" Height="30"></TextBox>
-        <Button Content="Войти" Grid.Row="3" Grid.ColumnSpan="2"  Name="BtnLogin" Click="BtnLogin_Click"/>
-        <Button Content="Забыли пароль" Grid.Row="4" Grid.Column="1"  Name="BtnMail" Click="BtnMail_Click"/>
-        <Button Content="Регистрация" Grid.Row="4" Grid.Column="0"  Name="BtnRegistration" Click="BtnRegistration_Click"/>
+        <TextBox x:Name="Login" Grid.Column="1" Grid.Row="1" Height="30" Margin="0,30,38,30"></TextBox>
+        <TextBox x:Name="Password" Grid.Column="1" Grid.Row="2" Height="30" Margin="0,30,38,30"></TextBox>
+        <Button Content="Войти" Grid.Row="3" Grid.Column="1"  Name="BtnLogin" Click="BtnLogin_Click"/>
+        <Button Content="Забыли пароль" Grid.Row="3" Grid.Column="0"  Name="BtnMail" Click="BtnMail_Click"/>
+
     </Grid>
 </Page>

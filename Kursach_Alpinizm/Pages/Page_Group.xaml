@@ -7,7 +7,9 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page_Group" IsVisibleChanged="Page_IsVisibleChanged">
-
+    <Page.Background>
+        <ImageBrush ImageSource="../image/таблицы.jpg"/>
+    </Page.Background>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="193*"/>

@@ -7,7 +7,9 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Main_Page">
-
+    <Page.Background>
+        <ImageBrush ImageSource="image/таблицы.jpg"/>
+    </Page.Background>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
