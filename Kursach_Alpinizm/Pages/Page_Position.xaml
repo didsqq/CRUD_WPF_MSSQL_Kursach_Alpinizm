@@ -30,8 +30,8 @@
             </DataGrid.Columns>
         </DataGrid>
 
-        <Button Content="Добавить" Grid.Row="1" HorizontalAlignment="Left" Name="BtnAdd" Click="BtnAdd_Click"/>
-        <Button Content="Удалить" Grid.Row="1" HorizontalAlignment="Right" Name="BtnDelete" Click="BtnDelete_Click"/>
-        <Button Content="Вернуться назад" Grid.Row="1" HorizontalAlignment="Center" Name="BtnBack" Click="BtnBack_Click"/>
+        <Button Content="Add" Grid.Row="1" HorizontalAlignment="Left" Name="BtnAdd" Click="BtnAdd_Click"/>
+        <Button Content="Delete" Grid.Row="1" HorizontalAlignment="Right" Name="BtnDelete" Click="BtnDelete_Click"/>
+        <Button Content="Back" Grid.Row="1" HorizontalAlignment="Center" Name="BtnBack" Click="BtnBack_Click"/>
     </Grid>
 </Page>

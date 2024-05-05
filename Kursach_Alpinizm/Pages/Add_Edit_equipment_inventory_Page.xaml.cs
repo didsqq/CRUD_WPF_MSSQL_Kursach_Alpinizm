@@ -64,5 +64,10 @@ namespace Kursach_Alpinizm.Pages
                 MessageBox.Show(ex.Message.ToString());
             }
         }
+
+        private void BtnBack_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Page_Equipment_inventory());
+        }
     }
 }

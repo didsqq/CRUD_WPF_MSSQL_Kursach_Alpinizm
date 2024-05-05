@@ -6,10 +6,8 @@
       xmlns:local="clr-namespace:Kursach_Alpinizm.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Add_Edit_Groups_Page">
-    <Page.Background>
-        <ImageBrush ImageSource="../image/photo_2024-04-30_22-12-55.jpg"/>
-    </Page.Background>
+      Title="Add_Edit_Groups_Page" Background="#272539">
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200*"/>
@@ -24,6 +22,7 @@
         
         <TextBox Text="{Binding Number_of_participants}" Grid.Column="1" Height="30"></TextBox>
 
-        <Button Content="Сохранить" Grid.ColumnSpan="2" Grid.Row="1" Name="BtnSave" Click="BtnSave_Click"/>
+        <Button Content="Save" Grid.Column="1" Grid.Row="6" Name="BtnSave" HorizontalAlignment="Left" Click="BtnSave_Click"/>
+        <Button Content="Back" Grid.Column="1" Grid.Row="6" Name="BtnBack" HorizontalAlignment="Right" Margin="0,0,50,0" Click="BtnBack_Click"/>
     </Grid>
 </Page>
