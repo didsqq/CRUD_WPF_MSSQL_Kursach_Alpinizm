@@ -6,22 +6,20 @@
       xmlns:local="clr-namespace:Kursach_Alpinizm"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Main_Page">
-    <Page.Background>
-        <ImageBrush ImageSource="image/таблицы.jpg"/>
-    </Page.Background>
-    <Border CornerRadius="20">
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
+      Title="Main_Page" Background="#272539">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Image Grid.Row="1" Grid.Column="1" Source="image/таблицы.jpg"/>
+        <TextBlock Text="Alter Ego" Foreground="White" HorizontalAlignment="Left" Margin="20,0,0,0"/>
+
+        <StackPanel Grid.Row="1">
             <Button Content="Горы" Grid.Row="0" Grid.Column="0"  Name="BtnMountain" Click="BtnMountain_Click"/>
             <Button Content="Альпинисты" Grid.Row="1" Grid.Column="0" Name="BtnAlpinists" Click="BtnAlpinists_Click"/>
             <Button Content="Снаряжение" Grid.Row="2" Grid.Column="0" Name="BtnEquipment" Click="BtnEquipment_Click"/>
@@ -30,6 +28,8 @@
             <Button Content="Команда" Grid.Row="1" Grid.Column="1" Name="BtnTeam" Click="BtnTeam_Click"/>
             <Button Content="Учет снаряжения" Grid.Row="2" Grid.Column="1" Name="BtnEquipment_inventory" Click="BtnEquipment_inventory_Click"/>
             <Button Content="Группа" Grid.Row="3" Grid.Column="1" Name="BtnGroup_inventory" Click="BtnGroup_inventory_Click"/>
-        </Grid>
-    </Border>
+        </StackPanel>
+
+        <Button Content="Back" HorizontalAlignment="Right" Margin="0,0,20,0" Grid.Column="1" Name="BtnBack" Click="BtnBack_Click"/>
+    </Grid>
 </Page>

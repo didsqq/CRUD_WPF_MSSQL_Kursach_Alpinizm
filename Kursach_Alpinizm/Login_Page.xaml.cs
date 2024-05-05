@@ -45,7 +45,6 @@ namespace Kursach_Alpinizm
                 foreach (team user in AlpinizmEntities.GetContext().team)
                 {
                     if (Login.Text == user.Login_ && GetHashString(Password.Text) == user.Password_)
-                    //if (Login.Text == user.Login_ && Password.Text == user.Password_)
                     {
                         MessageBox.Show("Вход успешен!");
                         NavigationService.Navigate(new Main_Page());

@@ -315,6 +315,8 @@
       <DependentUpon>AlpinizmEntities.edmx</DependentUpon>
       <LastGenOutput>AlpinizmEntities.cs</LastGenOutput>
     </Content>
+    <Resource Include="image\starry-sky-mountain-background-nature-remixed-media.jpg" />
+    <Resource Include="image\beautiful-shot-of-a-snowy-mountain-surrounded-by-natural-mist-with-amazing-starry-sky.jpg" />
     <Resource Include="image\таблицы.jpg" />
     <Resource Include="image\вход.jpg" />
     <Resource Include="image\photo_2024-04-30_22-12-55.jpg" />

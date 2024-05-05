@@ -8,16 +8,20 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page_Mail">
     <Page.Background>
-        <ImageBrush ImageSource="../image/вход.jpg"/>
+        <ImageBrush ImageSource="../image/starry-sky-mountain-background-nature-remixed-media.jpg" />
     </Page.Background>
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <TextBlock Text="Введите почту" Grid.Row="0"></TextBlock>
-        <TextBox x:Name="Mail" Grid.Row="1" Height="30"  Width="500"></TextBox>
-        <Button Content="Восстановить пароль" Grid.Row="3" Grid.Column="1" Width="500" Name="BtnMail" Click="BtnMail_Click"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Column="1" Text="Enter your verified account email address &#x0a; and we will send you a new password." Margin="0,70,0,50"></TextBlock>
+        <Button Content="Back" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,40,50,0" Grid.Column="1" Name="BtnBack" Click="BtnBack_Click"/>
+        <StackPanel>
+            <TextBlock Text="Reset your password" Margin="0,70,0,50"></TextBlock>
+            <TextBox x:Name="Mail" Height="30" Margin="0,130,0,50"  Width="280"></TextBox>
+            <Button Content="Reset" Margin="0,0,0,50" Width="280" Name="BtnMail" Click="BtnMail_Click"/>
+        </StackPanel>
+
     </Grid>
 </Page>

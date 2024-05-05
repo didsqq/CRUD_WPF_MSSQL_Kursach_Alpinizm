@@ -81,5 +81,10 @@ namespace Kursach_Alpinizm.Pages
 
             return new string(password);
         }
+
+        private void BtnBack_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Login_Page());
+        }
     }
 }
