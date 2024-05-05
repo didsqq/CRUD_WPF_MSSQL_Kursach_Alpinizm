@@ -53,8 +53,6 @@ namespace Kursach_Alpinizm.Pages
             if (string.IsNullOrWhiteSpace(_currentClimb.Total))
                 errors.AppendLine("Укажите Итог");
 
-
-
             if (errors.Length > 0)
             {
                 MessageBox.Show(errors.ToString());
