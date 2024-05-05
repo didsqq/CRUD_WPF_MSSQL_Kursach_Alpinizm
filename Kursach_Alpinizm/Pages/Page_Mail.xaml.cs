@@ -38,6 +38,7 @@ namespace Kursach_Alpinizm.Pages
                 MailAddress to = new MailAddress(Mail.Text);
                 MailMessage m = new MailMessage(from, to);
                 m.Subject = "Восстановление пароля";
+                int flag = 0;
                 using (AlpinizmEntities db = new AlpinizmEntities())
                 {
                     foreach (team user in db.team)
@@ -52,16 +53,23 @@ namespace Kursach_Alpinizm.Pages
 
                             MessageBox.Show("Пароль отправлен на почту");
                             NavigationService.Navigate(new Login_Page());
+                            flag = 1;
                         }
                     }
                     db.SaveChanges();
                 }
-                m.IsBodyHtml = true;
-                SmtpClient smtp = new SmtpClient("smtp.yandex.ru", 587);
-                smtp.Credentials = new NetworkCredential("didsqq@yandex.ru", "lhybtwljdlunlgjk");
-                smtp.EnableSsl = true;
-                smtp.Send(m);
-
+                if(flag == 1)
+                {
+                    m.IsBodyHtml = true;
+                    SmtpClient smtp = new SmtpClient("smtp.yandex.ru", 587);
+                    smtp.Credentials = new NetworkCredential("didsqq@yandex.ru", "lhybtwljdlunlgjk");
+                    smtp.EnableSsl = true;
+                    smtp.Send(m);
+                }
+                else
+                {
+                    MessageBox.Show("Пользователь с такой почтой не зарегистрирован");
+                }
             }
             catch (Exception ex)
             {
