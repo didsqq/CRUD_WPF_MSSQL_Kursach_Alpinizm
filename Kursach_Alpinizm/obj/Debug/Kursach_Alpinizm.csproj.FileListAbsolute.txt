@@ -17,7 +17,6 @@ C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Ku
 C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Kursach_Alpinizm.Properties.Resources.resources
 C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Kursach_Alpinizm.csproj.GenerateResource.cache
 C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Kursach_Alpinizm.csproj.CoreCompileInputs.cache
-C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Kursach_Alpinizm.csproj.CopyComplete
 C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Kursach_Alpinizm.exe
 C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Kursach_Alpinizm.pdb
 C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\App.baml
@@ -120,3 +119,4 @@ C:\Users\Адель\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Pages\Pa
 C:\Users\Адель\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Pages\Page_Mail.baml
 C:\Users\Адель\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Pages\Page_Position.baml
 C:\Users\Адель\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Pages\Page_Team.baml
+C:\Users\Господин\Desktop\Kursach_Alpinizm\Kursach_Alpinizm\obj\Debug\Kursach_.1403387C.Up2Date

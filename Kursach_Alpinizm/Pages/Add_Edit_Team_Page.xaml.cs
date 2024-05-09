@@ -58,7 +58,7 @@ namespace Kursach_Alpinizm.Pages
                 return;
             }
 
-            if (_currentteam.ID_position == 0)
+            if (_currentteam.ID_team_member == 0)
                 AlpinizmEntities.GetContext().team.Add(_currentteam);
             try
             {
