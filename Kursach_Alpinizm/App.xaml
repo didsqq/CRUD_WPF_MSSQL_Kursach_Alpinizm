@@ -18,6 +18,7 @@
             <Setter Property="FontSize" Value="18"/>
             <Setter Property="Foreground" Value ="White"/>
         </Style>
+
         <Style TargetType="TextBox">
             <Setter Property="Background" Value ="#21202B"/>
             <Setter Property="Foreground" Value ="White"/>
@@ -28,6 +29,14 @@
         </Style>
         <Style TargetType="DataGridColumnHeader">
             <Setter Property="Background" Value ="#272539"/>
+        </Style>
+        <Style TargetType="ComboBox" x:Key="ComboBoxStyle">
+            <Style.Resources>
+                <Style TargetType="TextBlock">
+                    <Setter Property="Foreground" Value="Black"/>
+                    <!-- Цвет текста внутри ComboBox -->
+                </Style>
+            </Style.Resources>
         </Style>
     </Application.Resources>
 </Application>

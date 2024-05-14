@@ -42,15 +42,32 @@ namespace Kursach_Alpinizm.Pages
             if (string.IsNullOrWhiteSpace(_currentteam.Address_))
                 errors.AppendLine("Укажите Адрес");
             if (string.IsNullOrWhiteSpace(Convert.ToString(_currentteam.Phone)))
-              errors.AppendLine("Укажите номер телефона");
-
+                errors.AppendLine("Укажите номер телефона");
             if (string.IsNullOrWhiteSpace(_currentteam.Login_))
                 errors.AppendLine("Укажите Логин");
             if (string.IsNullOrWhiteSpace(_currentteam.Password_))
                 errors.AppendLine("Укажите Пароль");
-
             if (ComboPosition.SelectedItem == null)
                 errors.AppendLine("Выберите должность");
+
+            foreach (team team in AlpinizmEntities.GetContext().team)
+            {
+                if (_currentteam.Login_ == team.Login_)
+                {
+                    MessageBox.Show("Пользователь с таким логином существует");
+                    return;
+                }
+                if (_currentteam.Phone == team.Phone)
+                {
+                    MessageBox.Show("Пользователь с таким номером телефона существует");
+                    return;
+                }
+                if (_currentteam.Address_ == team.Address_)
+                {
+                    MessageBox.Show("Пользователь с такой почтой уже существует");
+                    return;
+                }
+            }
 
             if (errors.Length > 0)
             {

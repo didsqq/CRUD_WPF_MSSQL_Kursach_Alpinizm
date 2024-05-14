@@ -38,7 +38,7 @@
         <TextBox Text="{Binding Login_}" Grid.Column="1" Grid.Row="5" Height="30"></TextBox>
         <TextBox Text="{Binding Password_}" Grid.Column="1" Grid.Row="6" Height="30"></TextBox>
 
-        <ComboBox SelectedItem="{Binding position}" x:Name="ComboPosition" Grid.Row="3" Grid.Column="1" Height="30" DisplayMemberPath="Title"/>
+        <ComboBox Style="{StaticResource ComboBoxStyle}" SelectedItem="{Binding position}" x:Name="ComboPosition" Grid.Row="3" Grid.Column="1" Height="30" DisplayMemberPath="Title"/>
 
         <Button Content="Save" Grid.Column="1" Grid.Row="7" Name="BtnSave" HorizontalAlignment="Left" Click="BtnSave_Click"/>
         <Button Content="Back" Grid.Column="1" Grid.Row="7" Name="BtnBack" HorizontalAlignment="Right" Margin="0,0,50,0" Click="BtnBack_Click"/>
