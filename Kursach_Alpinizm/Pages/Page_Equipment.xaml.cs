@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ClosedXML.Excel;
+using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -67,6 +69,47 @@ namespace Kursach_Alpinizm.Pages
             {
                 AlpinizmEntities.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
                 Equipment.ItemsSource = AlpinizmEntities.GetContext().equipment.ToList();
+            }
+        }
+
+        private void BtnReport_Click(object sender, RoutedEventArgs e)
+        {
+            var saveFileDialog = new SaveFileDialog
+            {
+                Filter = "Excel Files (*.xlsx)|*.xlsx|All Files (*.*)|*.*",
+                FileName = "Report.xlsx"
+            };
+
+            if (saveFileDialog.ShowDialog() == true)
+            {
+                string filePath = saveFileDialog.FileName;
+
+                using (var workbook = new XLWorkbook())
+                {
+                    try
+                    {
+                        var worksheet = workbook.Worksheets.Add("Report");
+                        int i = 0;
+                        worksheet.Cell(i + 1, 1).Value = "Название";
+                        worksheet.Cell(i + 1, 2).Value = "Количество";
+
+
+                        foreach (equipment equipment in AlpinizmEntities.GetContext().equipment)
+                        {
+                            int j = 0;
+                            worksheet.Cell(i + 2, j + 1).Value = equipment.Title;
+                            worksheet.Cell(i + 2, j + 2).Value = equipment.Quantity_available;
+                            i++;
+                        }
+
+                        workbook.SaveAs(filePath);
+                        MessageBox.Show("Отчет успешно сохранен!", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Ошибка при сохранении отчета: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
+                }
             }
         }
     }

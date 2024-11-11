@@ -23,12 +23,12 @@
         <TextBlock Text="Снаряжение" Grid.Row="1"></TextBlock>
         <TextBlock Text="Количество" Grid.Row="2"></TextBlock>
 
-        <TextBox Text="{Binding Quantity_taken}" Grid.Row="2" Grid.Column="1" Height="30"></TextBox>
+        <TextBox MaxLength="3" Text="{Binding Quantity_taken}" Grid.Row="2" Grid.Column="1" Height="30"></TextBox>
 
         <ComboBox SelectedItem="{Binding groups }" x:Name="ComboGroup" Grid.Column="1" Height="30" DisplayMemberPath="ID_groups"/>
         <ComboBox SelectedItem="{Binding equipment}" x:Name="ComboEquipment" Grid.Row="1" Grid.Column="1" Height="30" DisplayMemberPath="Title"/>
 
-        <Button Content="Save" Grid.Column="1" Grid.Row="6" Name="BtnSave" HorizontalAlignment="Left" Click="BtnSave_Click"/>
-        <Button Content="Back" Grid.Column="1" Grid.Row="6" Name="BtnBack" HorizontalAlignment="Right" Margin="0,0,50,0" Click="BtnBack_Click"/>
+        <Button Content="Сохранить" Grid.Column="1" Grid.Row="6" Name="BtnSave" HorizontalAlignment="Left" Click="BtnSave_Click"/>
+        <Button Content="Назад" Grid.Column="1" Grid.Row="6" Name="BtnBack" HorizontalAlignment="Right" Margin="0,0,50,0" Click="BtnBack_Click"/>
     </Grid>
 </Page>

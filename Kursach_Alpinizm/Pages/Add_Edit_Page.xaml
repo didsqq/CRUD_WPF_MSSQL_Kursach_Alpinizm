@@ -22,11 +22,11 @@
         <TextBlock Text="Название"></TextBlock>
         <TextBlock Text="Высота" Grid.Row="1"></TextBlock>
         <TextBlock Text="Хребет" Grid.Row="2"></TextBlock>
-        <TextBox Text="{Binding Title}" Grid.Column="1" Height="30"> </TextBox>
-        <TextBox Text="{Binding Height}" Grid.Column="1" Grid.Row="1" Height="30"></TextBox>
-        <TextBox Text="{Binding Mountain_range}" Grid.Column="1" Grid.Row="2" Height="30"></TextBox>
+        <TextBox MaxLength="30" Text="{Binding Title}" Grid.Column="1" Height="30"> </TextBox>
+        <TextBox MaxLength="5" Text="{Binding Height}" Grid.Column="1" Grid.Row="1" Height="30"></TextBox>
+        <TextBox MaxLength="30" Text="{Binding Mountain_range}" Grid.Column="1" Grid.Row="2" Height="30"></TextBox>
 
-        <Button Content="Save" Grid.Column="1" Grid.Row="6" Name="BtnSave" HorizontalAlignment="Left" Click="BtnSave_Click"/>
-        <Button Content="Back" Grid.Column="1" Grid.Row="6" Name="BtnBack" HorizontalAlignment="Right" Margin="0,0,50,0" Click="BtnBack_Click"/>
+        <Button Content="Сохранить" Grid.Column="1" Grid.Row="6" Name="BtnSave" HorizontalAlignment="Left" Click="BtnSave_Click"/>
+        <Button Content="Назад" Grid.Column="1" Grid.Row="6" Name="BtnBack" HorizontalAlignment="Right" Margin="0,0,50,0" Click="BtnBack_Click"/>
     </Grid>
 </Page>
