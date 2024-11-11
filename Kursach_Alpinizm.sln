@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kursach_Alpinizm", "Kursach_Alpinizm\Kursach_Alpinizm.csproj", "{88B905CE-B4B0-4880-A371-FFA07F758940}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{6BB19109-754F-47A3-BC78-5D08F7B280FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{88B905CE-B4B0-4880-A371-FFA07F758940}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88B905CE-B4B0-4880-A371-FFA07F758940}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88B905CE-B4B0-4880-A371-FFA07F758940}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BB19109-754F-47A3-BC78-5D08F7B280FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BB19109-754F-47A3-BC78-5D08F7B280FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BB19109-754F-47A3-BC78-5D08F7B280FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BB19109-754F-47A3-BC78-5D08F7B280FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

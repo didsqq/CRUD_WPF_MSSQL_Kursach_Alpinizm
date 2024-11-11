@@ -1,19 +1,9 @@
 ﻿using Kursach_Alpinizm.Pages;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Kursach_Alpinizm
 {
@@ -27,36 +17,34 @@ namespace Kursach_Alpinizm
             InitializeComponent();
         }
 
-        public static string GetHashString(string s)
-        {
-            byte[] bytes = Encoding.Unicode.GetBytes(s);
-            MD5CryptoServiceProvider CSP = new MD5CryptoServiceProvider();
-            byte[] byteHash = CSP.ComputeHash(bytes);
-            string hash = "";
-            foreach (byte b in byteHash)
-            {
-                hash += string.Format("{0:x2}", b);
-            }
-            return hash;
-        }
-
         private void BtnLogin_Click(object sender, RoutedEventArgs e)
         {
-                foreach (team user in AlpinizmEntities.GetContext().team)
-                {
-                    if (Login.Text == user.Login_ && GetHashString(Password.Text) == user.Password_)
-                    {
-                        MessageBox.Show("Вход успешен!");
-                        NavigationService.Navigate(new Main_Page());
-                        return;
-                    }
-                }
-                MessageBox.Show("Логин или пароль указан неверно! ");
+            /*                foreach (team user in AlpinizmEntities.GetContext().team)
+                            {
+                                if (Login.Text == user.Login_ && GetHashString(Password.Text) == user.Password_)
+                                {
+                                    MessageBox.Show("Вход успешен!");
+                                    NavigationService.Navigate(new Main_Page());
+                                    return;
+                                }
+                            }
+                            MessageBox.Show("Логин или пароль указан неверно! ");*/
+            if( LogIn.logIn(Login.Text, Password.Text))
+            {
+                MessageBox.Show("Успешный вход");
+                NavigationService.Navigate(new Main_Page());
+            }
+            else
+            {
+                MessageBox.Show("Логин или пароль указан неверно!");
+            }
+            
         }
 
         private void BtnMail_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Page_Mail());
         }
+
     }
 }

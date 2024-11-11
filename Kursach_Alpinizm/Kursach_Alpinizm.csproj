@@ -100,6 +100,7 @@
     <Compile Include="groups.cs">
       <DependentUpon>AlpinizmEntities.tt</DependentUpon>
     </Compile>
+    <Compile Include="LogIn.cs" />
     <Compile Include="Login_Page.xaml.cs">
       <DependentUpon>Login_Page.xaml</DependentUpon>
     </Compile>

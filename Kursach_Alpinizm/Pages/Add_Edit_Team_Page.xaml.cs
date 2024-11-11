@@ -79,7 +79,7 @@ namespace Kursach_Alpinizm.Pages
                 AlpinizmEntities.GetContext().team.Add(_currentteam);
             try
             {
-                _currentteam.Password_ = Login_Page.GetHashString(_currentteam.Password_);
+                _currentteam.Password_ = LogIn.GetHashString(_currentteam.Password_);
                 AlpinizmEntities.GetContext().SaveChanges();
                 MessageBox.Show("Информация сохранена");
                 NavigationService.Navigate(new Page_Team());

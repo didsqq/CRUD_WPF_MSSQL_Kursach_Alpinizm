@@ -48,7 +48,7 @@ namespace Kursach_Alpinizm.Pages
                             string password = GeneratePassword();
 
                             m.Body = "<h1>Пароль: " + password + "</h1>";
-                            string pass_hash = Login_Page.GetHashString(password);
+                            string pass_hash = LogIn.GetHashString(password);
                             user.Password_ = pass_hash;
 
                             MessageBox.Show("Пароль отправлен на почту");
