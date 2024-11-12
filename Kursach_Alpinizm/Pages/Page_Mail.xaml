@@ -15,10 +15,10 @@
             <ColumnDefinition Width="300"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <TextBlock Grid.Column="1" Text="Введите адрес электронной почты&#x0a; вашей подтвержденной учетной записи&#x0a; и мы вышлем вам новый пароль." Margin="0,70,0,50"></TextBlock>
+        <TextBlock Foreground="White" Grid.Column="1" Text="Введите адрес электронной почты&#x0a; вашей подтвержденной учетной записи&#x0a; и мы вышлем вам новый пароль." Margin="0,70,0,50"></TextBlock>
         <Button Content="Назад" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,40,50,0" Grid.Column="1" Name="BtnBack" Click="BtnBack_Click"/>
         <StackPanel>
-            <TextBlock Text="Восстановите пароль" Margin="0,70,0,50"></TextBlock>
+            <TextBlock Foreground="White" Text="Восстановите пароль" Margin="0,70,0,50"></TextBlock>
             <TextBox MaxLength="50" x:Name="Mail" Height="30" Margin="0,130,0,50"  Width="280"></TextBox>
             <Button Content="Восстановить" Margin="0,0,0,50" Width="280" Name="BtnMail" Click="BtnMail_Click"/>
         </StackPanel>

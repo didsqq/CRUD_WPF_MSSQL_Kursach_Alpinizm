@@ -16,7 +16,7 @@
             <Setter Property="VerticalAlignment" Value ="Center"></Setter>
             <Setter Property="HorizontalAlignment" Value ="Center"></Setter>
             <Setter Property="FontSize" Value="18"/>
-            <Setter Property="Foreground" Value ="White"/>
+            <Setter Property="Foreground" Value ="BlueViolet"/>
         </Style>
 
         <Style TargetType="TextBox">
@@ -30,17 +30,6 @@
         <Style TargetType="DataGridColumnHeader">
             <Setter Property="Background" Value ="#272539"/>
         </Style>
-        <Style TargetType="ComboBox">
-            <Setter Property="Foreground" Value="Black"/>
-            <Setter Property="Background" Value="White"/>
-            <Setter Property="ItemContainerStyle">
-                <Setter.Value>
-                    <Style TargetType="ComboBoxItem">
-                        <Setter Property="Foreground" Value="Black"/>
-                        <Setter Property="Background" Value="White"/>
-                    </Style>
-                </Setter.Value>
-            </Setter>
-        </Style>
+
     </Application.Resources>
 </Application>
