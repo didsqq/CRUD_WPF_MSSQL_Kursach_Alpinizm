@@ -21,13 +21,17 @@ namespace Kursach_Alpinizm.Pages
     public partial class Add_Edit_Team_Page : Page
     {
         private team _currentteam = new team();
+        private bool team_new = true;
         public Add_Edit_Team_Page(team selectedteam)
         {
             InitializeComponent();
             ComboPosition.ItemsSource = AlpinizmEntities.GetContext().position.ToList();
 
             if (selectedteam != null)
+            {
                 _currentteam = selectedteam;
+                team_new = false;
+            }
             DataContext = _currentteam;
         }
 
@@ -49,23 +53,25 @@ namespace Kursach_Alpinizm.Pages
                 errors.AppendLine("Укажите Пароль");
             if (ComboPosition.SelectedItem == null)
                 errors.AppendLine("Выберите должность");
-
-            foreach (team team in AlpinizmEntities.GetContext().team)
+            if (team_new)
             {
-                if (_currentteam.Login_ == team.Login_)
+                foreach (team team in AlpinizmEntities.GetContext().team)
                 {
-                    MessageBox.Show("Пользователь с таким логином существует");
-                    return;
-                }
-                if (_currentteam.Phone == team.Phone)
-                {
-                    MessageBox.Show("Пользователь с таким номером телефона существует");
-                    return;
-                }
-                if (_currentteam.Address_ == team.Address_)
-                {
-                    MessageBox.Show("Пользователь с такой почтой уже существует");
-                    return;
+                    if (_currentteam.Login_ == team.Login_)
+                    {
+                        MessageBox.Show("Пользователь с таким логином существует");
+                        return;
+                    }
+                    if (_currentteam.Phone == team.Phone)
+                    {
+                        MessageBox.Show("Пользователь с таким номером телефона существует");
+                        return;
+                    }
+                    if (_currentteam.Address_ == team.Address_)
+                    {
+                        MessageBox.Show("Пользователь с такой почтой уже существует");
+                        return;
+                    }
                 }
             }
 

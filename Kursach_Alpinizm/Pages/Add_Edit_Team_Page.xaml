@@ -35,7 +35,7 @@
         <TextBox MaxLength="20" Text="{Binding Date_of_birth}" Grid.Column="1" Grid.Row="1" Height="30"></TextBox>
         <TextBox MaxLength="30" Text="{Binding Address_}" Grid.Column="1" Grid.Row="2" Height="30"></TextBox>
         <TextBox MaxLength="10" Text="{Binding Phone}" Grid.Column="1" Grid.Row="4" Height="30"></TextBox>
-        <TextBox MaxLength="20" Text="{Binding Login_}" Grid.Column="1" Grid.Row="5" Height="30"></TextBox>
+        <TextBox MaxLength="35" Text="{Binding Login_}" Grid.Column="1" Grid.Row="5" Height="30"></TextBox>
         <TextBox MaxLength="15" Text="{Binding Password_}" Grid.Column="1" Grid.Row="6" Height="30"></TextBox>
 
         <ComboBox SelectedItem="{Binding position}" x:Name="ComboPosition" Grid.Row="3" Grid.Column="1" Height="30" DisplayMemberPath="Title"/>
