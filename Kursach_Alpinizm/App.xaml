@@ -30,13 +30,17 @@
         <Style TargetType="DataGridColumnHeader">
             <Setter Property="Background" Value ="#272539"/>
         </Style>
-        <Style TargetType="ComboBox" x:Key="ComboBoxStyle">
-            <Style.Resources>
-                <Style TargetType="TextBlock">
-                    <Setter Property="Foreground" Value="Black"/>
-                    <!-- Цвет текста внутри ComboBox -->
-                </Style>
-            </Style.Resources>
+        <Style TargetType="ComboBox">
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="ItemContainerStyle">
+                <Setter.Value>
+                    <Style TargetType="ComboBoxItem">
+                        <Setter Property="Foreground" Value="Black"/>
+                        <Setter Property="Background" Value="White"/>
+                    </Style>
+                </Setter.Value>
+            </Setter>
         </Style>
     </Application.Resources>
 </Application>

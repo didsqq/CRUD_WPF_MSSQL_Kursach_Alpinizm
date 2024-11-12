@@ -30,6 +30,6 @@
             <Button Content="Группа" Grid.Row="3" Grid.Column="1" Name="BtnGroup_inventory" Click="BtnGroup_inventory_Click"/>
         </StackPanel>
 
-        <Button Content="Back" HorizontalAlignment="Right" Margin="0,0,20,0" Grid.Column="1" Name="BtnBack" Click="BtnBack_Click"/>
+        <Button Content="Выйти" HorizontalAlignment="Right" Margin="0,0,20,0" Grid.Column="1" Name="BtnBack" Click="BtnBack_Click"/>
     </Grid>
 </Page>
